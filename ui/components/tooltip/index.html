@@ -1,0 +1,1803 @@
+<!doctype html>
+<html data-vapor-wasm="/_vapor/vapor.911d09dc0c.wasm" data-vapor-browser="/_vapor/browser.4c4c45d709.js" lang="en">
+
+<head>
+  <title>Vapor UI</title>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="12aR_338F0VaglKbfvPLczdZV_Ej6AVx9Ef7M4ULfLU" />
+  <meta name="description" content="Senet Application" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/_vapor/vapor.911d09dc0c.wasm" as="fetch" type="application/wasm" crossorigin />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Preconnect stays the same -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media = 'all'" />
+
+  <link rel="preload" href="/assets/css/bootstrap-icons.css" as="style" onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      " />
+  <!-- <script type="module" src="/web/bundle.min.js"></script> -->
+  <script type="module" src="/_vapor/bundle.4245f6bc68.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Montserrat;
+      font-optical-sizing: auto;
+      height: 100dvh;
+      width: 100%;
+      box-sizing: border-box;
+      flex-shrink: 0;
+      background-color: rgba(var(--background));
+      color: rgb(var(--text_color));
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE/Edge */
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-scrollbar: display: none;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      /* Chrome, Safari, Opera */
+      margin: 0;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    textarea {
+      line-height: 1.5;
+      font-size-adjust: 0.5;
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    div {
+      min-width: 0;
+    }
+
+    button p {
+      font-family: inherit;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+
+    input[type="file"]::file-selector-button {
+      background: transparent;
+      color: transparent;
+      border: none;
+    }
+
+
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px transparent inset;
+      -webkit-text-fill-color: inherit;
+      caret-color: inherit;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .reload-indicator {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      display: none;
+      align-items: center;
+      gap: 10px;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      z-index: 99999;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .reload-indicator.visible {
+      display: flex;
+    }
+
+    .reload-spinner {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #333;
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+
+
+    /* The gear disc - moves DOWN and LEFT when switched ON */
+    #gearDisc {
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* The star disc - moves UP and RIGHT when switched ON */
+    #starDisc {
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+  </style>
+  <link rel="stylesheet" href="/_vapor/style.9f2e1f30da.css" />
+  <link rel="stylesheet" href="/_vapor/style_variables.e1e6d128b1.css" /></head>
+
+<body>
+  <main id="contents" style="display: contents"><div  id="nav" data-vp="" class="lay_07qwZ pos_SdsMW2 mapa_obiMi2 vis_eN7yA4 ">
+<div  id="Flex_MMGqT1-gk" data-vp="" class="lay_afHcj1 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<button  id="CtxB_Cf7pZ-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_5VSrQ4 "aria-label="navigate home page of tether">
+<div  id="Flex_kQIpm3-gk" data-vp="" class="lay_OUCAc1 pos_e8wtf3 mapa_3GodU4 vis_Jnr9B1 intr_rfT7n1 ">
+<div  id="Grap_9FZx6-gk" data-vp="" class="lay_j73IP1 pos_e8wtf3 mapa_CrkEb2 vis_g80pp2 intr_WpLmP4 ">
+</div>
+</div>
+</button>
+<ul  id="List_aXgiq-gk" data-vp="" class="lay_te7oH4 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<li  id="List_5CTv6-gk" data-vp="" class="lay_uFdNT pos_e8wtf3 mapa_CrkEb2 vis_MZnYt intr_MXJhD3 ">
+<a  id="Link_YsaVf4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 " href="/ui/components">
+<p  id="Text_DqD3u1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_mzTgO4 ">[1] = Components</p>
+</a>
+</li>
+<li  id="List_40D8n3-gk" data-vp="" class="lay_uFdNT pos_e8wtf3 mapa_CrkEb2 vis_MZnYt intr_MXJhD3 ">
+<a  id="Link_X7WQe3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 " href="/ui/templates">
+<p  id="Text_hi3l01-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_mzTgO4 ">[2] = Templates</p>
+</a>
+</li>
+<li  id="List_JM7md-gk" data-vp="" class="lay_uFdNT pos_e8wtf3 mapa_CrkEb2 vis_MZnYt intr_MXJhD3 ">
+<a  id="Link_2RIDF-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 " href="/ui/auth">
+<p  id="Text_PezvG3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_mzTgO4 ">[3] = Authentication</p>
+</a>
+</li>
+<li  id="List_YHTnh3-gk" data-vp="" class="lay_uFdNT pos_e8wtf3 mapa_CrkEb2 vis_MZnYt intr_MXJhD3 ">
+<a  id="Link_a955K-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 " href="/ui/payment">
+<p  id="Text_IWZCZ-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_mzTgO4 ">[4] = Payments</p>
+</a>
+</li>
+</ul>
+</div>
+<div  id="Flex_cnAY73-gk" data-vp="" class="lay_9ec1Z3 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_iMqsd4-gk" data-vp="" class="lay_8oAQm2 pos_e8wtf3 mapa_jarwO1 vis_PMQ7Z1 ">
+<div  id="Flex_LMaKE2-gk" data-vp="" class="lay_oSHHV pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_rXfIX-gk" data-vp="" class="lay_AEgkh1 pos_e8wtf3 mapa_CrkEb2 vis_gcgYt3 intr_X5tsf4 ">
+<button  id="CtxB_zhjRj3-gk" data-vp="" class="lay_seAbC1 pos_t0s233 mapa_ZJR9B1 vis_dZNBO4 ">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"   id="Svg_H3yQs3-gk" data-vp="" class="lay_9Tg063 pos_e8wtf3 mapa_CrkEb2 vis_E3zio2 ">
+<path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/>
+</svg>
+<p  id="Text_7050D-gk" data-vp="" style="transform: translateY(0%) scale(1);" class="lay_jXzf62 pos_v368w mapa_sgnwh vis_ryjJt2 ">Search</p>
+<div  id="Flex_ynJ1p1-gk" data-vp="" class="lay_hULZR2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<i  id="Icon_cIwQL-gk" data-vp="" class="bi bi-command lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_knyVH ">
+</i>
+<p  id="Text_APBpi1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_knyVH ">K</p>
+</div>
+</button>
+</div>
+</div>
+</div>
+<a  id="Redi_sYJ454-gk" data-vp="" class="nav-item" href="https://github.com/senet-toolbox/vapor-ui">
+<i  id="Icon_FulYG2-gk" data-vp="" class="bi bi-github nav-item-icon">
+</i>
+</a>
+<button  id="CtxB_no1sa3-gk" data-vp="" class="lay_OG6Dc2 pos_e8wtf3 mapa_CrkEb2 vis_Ae73c4 "aria-label="toggle theme">
+    <svg viewBox="0 0 89 55" fill="none" xmlns="http://www.w3.org/2000/svg"   id="Svg_QzuOX1-gk" data-vp="" class="lay_cpmKG1 pos_e8wtf3 mapa_CrkEb2 vis_P09pN ">
+
+      
+      <!-- BACKGROUND: Top switch base (black/white one on top-right) -->
+      <path d="M60.2615 51.003L82.7781 38.003C86.2457 36.001 87.9795 33.3771 87.9796 30.7531V27.7531C87.9796 25.1291 86.2458 22.5051 82.7782 20.503C75.8429 16.499 64.5987 16.499 57.6634 20.503L35.1468 33.503C31.6791 35.5051 29.9453 38.1291 29.9453 40.7531V43.7531C29.9453 46.3771 31.6791 49.001 35.1467 51.003C42.082 55.0071 53.3262 55.0071 60.2615 51.003Z" fill="black"/>
+      <path d="M87.9796 27.7531C87.9796 25.1291 86.2458 22.5051 82.7782 20.503C75.8429 16.499 64.5987 16.499 57.6634 20.503L35.1468 33.503C31.6791 35.5051 29.9453 38.1291 29.9453 40.7531M87.9796 27.7531C87.9796 30.3771 86.2458 33.001 82.7782 35.003L60.2615 48.003C53.3263 52.0071 42.082 52.0071 35.1468 48.003C31.6792 46.001 29.9453 43.3771 29.9453 40.7531M87.9796 27.7531V30.7531C87.9795 33.3771 86.2457 36.001 82.7781 38.003L60.2615 51.003C53.3262 55.0071 42.082 55.0071 35.1467 51.003C31.6791 49.001 29.9453 46.3771 29.9453 43.7531V40.7531" fill="rgba(var(--tint))"/>
+      <path d="M87.9796 27.7531C87.9796 25.1291 86.2458 22.5051 82.7782 20.503C75.8429 16.499 64.5987 16.499 57.6634 20.503L35.1468 33.503C31.6791 35.5051 29.9453 38.1291 29.9453 40.7531M87.9796 27.7531C87.9796 30.3771 86.2458 33.001 82.7782 35.003L60.2615 48.003C53.3263 52.0071 42.082 52.0071 35.1468 48.003C31.6792 46.001 29.9453 43.3771 29.9453 40.7531M87.9796 27.7531V30.7531C87.9795 33.3771 86.2457 36.001 82.7781 38.003L60.2615 51.003C53.3262 55.0071 42.082 55.0071 35.1467 51.003C31.6791 49.001 29.9453 46.3771 29.9453 43.7531V40.7531" stroke="rgba(var(--background))"/>
+
+      <!-- BACKGROUND: Bottom switch base (black one with stars on bottom-left) -->
+      <path d="M53.3328 21.003L30.8161 34.003C23.8809 38.0071 12.6367 38.0071 5.7014 34.003C2.2413 32.0053 0.5075 29.3883 0.5 26.77V23.7531C0.5 21.2918 2.0255 18.8305 5.0765 16.8824C6.4961 14.7104 9.48 12.9814 13.235 12.1535L28.2181 3.50302C35.1533 -0.501005 46.3976 -0.501005 53.3328 3.50302C56.8005 5.50512 58.5343 8.12911 58.5343 10.7531V13.7531C58.5342 16.3771 56.8004 19.001 53.3328 21.003Z" fill="black"/>
+      <path d="M0.5 23.7531C0.5 21.1291 2.2338 18.5051 5.7015 16.503L28.2181 3.50302C35.1534 -0.501005 46.3976 -0.501005 53.3328 3.50302C56.8005 5.50512 58.5343 8.12911 58.5343 10.7531M0.5 23.7531C0.5 26.3771 2.2339 29.001 5.7015 31.003C12.6367 35.0071 23.8809 35.0071 30.8162 31.003L53.3329 18.003C56.8005 16.001 58.5343 13.3771 58.5343 10.7531M0.5 23.7531V26.77C0.5075 29.3883 2.2413 32.0053 5.7014 34.003C12.6367 38.0071 23.8809 38.0071 30.8162 34.003L53.3328 21.003C56.8004 19.001 58.5343 16.3771 58.5343 13.7531V10.7531" stroke="white"/>
+
+      <!-- MOVABLE: Gear disc (starts top-right, slides DOWN-LEFT when ON) -->
+      <g id="gearDisc">
+        <path d="M70.2217 16.1211C73.7616 16.1212 77.2745 16.902 79.9307 18.4355C82.5898 19.9708 83.8057 21.9134 83.8057 23.7529V26.7529C83.8056 28.5923 82.5895 30.5342 79.9307 32.0693C77.2745 33.6029 73.7616 34.3847 70.2217 34.3848C66.6816 34.3848 63.168 33.6029 60.5117 32.0693C57.853 30.5342 56.6368 28.5923 56.6367 26.7529V23.7393C56.6427 21.9039 57.8592 19.9671 60.5117 18.4355C63.168 16.902 66.6816 16.1211 70.2217 16.1211Z" fill="rgba(var(--tint))" stroke="rgba(var(--tint))"/>
+        <path d="M56.1367 23.7377C56.13 25.8238 57.5051 27.9111 60.2619 29.5028C65.7623 32.6785 74.6802 32.6785 80.1805 29.5028C82.9307 27.915 84.3058 25.8339 84.3058 23.7528M56.1367 23.7377C56.1434 21.6616 57.5184 19.5868 60.2619 18.0028C65.7623 14.8272 74.6802 14.8272 80.1805 18.0028C82.9307 19.5906 84.3058 21.6717 84.3058 23.7528M56.1367 23.7377V26.7528C56.1367 28.8339 57.5118 30.915 60.262 32.5028C65.7623 35.6784 74.6802 35.6784 80.1805 32.5028C82.9307 30.915 84.3058 28.8339 84.3058 26.7528V23.7528" stroke="rgba(var(--background))"/>
+        <path d="M63.7219 20L65.454 21M70.217 18.4492V19.8634M76.7122 20L74.9801 21M79.4026 23.75H76.9531M74.9807 26.5L76.7127 27.5M70.217 27.6406V29.0548M65.4533 26.5L63.7213 27.5M63.4807 23.75H61.0312M72.3821 22.5C73.5779 23.1904 73.5779 24.3096 72.3821 25C71.1864 25.6904 69.2477 25.6904 68.052 25C66.8563 24.3096 66.8563 23.1904 68.052 22.5C69.2477 21.8096 71.1864 21.8096 72.3821 22.5Z" stroke="rgba(var(--background))" stroke-linecap="round"/>
+      </g>
+
+      <!-- MOVABLE: Star disc (starts bottom-left, slides UP-RIGHT when ON) -->
+      <g id="starDisc">
+        <path d="M4.17188 22.7529C4.17188 27.2439 10.4778 30.8846 18.2565 30.8846C26.0352 30.8846 32.3411 27.2439 32.3411 22.7529V19.7529C32.3411 15.2618 26.0352 11.6211 18.2566 11.6211C10.4779 11.6211 4.17197 15.2618 4.17197 19.7529L4.17188 22.7529Z" fill="black"/>
+        <path d="M18.6951 15.1616L18.8714 14.4492L19.0477 15.1616C19.1247 15.4727 19.5481 15.7172 20.0869 15.7616L21.3209 15.8634L20.0869 15.9652C19.5481 16.0096 19.1247 16.254 19.0477 16.5652L18.8714 17.2776L18.6951 16.5652C18.6182 16.254 18.1948 16.0096 17.6559 15.9652L16.4219 15.8634L17.6559 15.7616C18.1948 15.7172 18.6182 15.4727 18.6951 15.1616Z" fill="black"/>
+        <path d="M23.5513 17.9579L23.7698 16.5703L23.9883 17.9579C24.0397 18.2843 24.4728 18.5479 25.0348 18.5942L26.2193 18.6919L25.0348 18.7896C24.4728 18.8359 24.0397 19.0992 23.9883 19.4256L23.7698 20.8132L23.5513 19.4253C23.4999 19.0989 23.0668 18.8356 22.5048 18.7893L21.3203 18.6916L22.5048 18.5939C23.0668 18.5476 23.4999 18.2843 23.5513 17.9579Z" fill="black"/>
+        <path d="M32.3411 19.7529C32.3409 24.2438 26.0351 27.8846 18.2566 27.8846C10.4779 27.8846 4.17197 24.2439 4.17197 19.7529M32.3411 19.7529C32.3411 15.2618 26.0352 11.6211 18.2566 11.6211C10.4779 11.6211 4.17197 15.2618 4.17197 19.7529M32.3411 19.7529V22.7529C32.3411 27.2439 26.0352 30.8846 18.2565 30.8846C10.4778 30.8846 4.17188 27.2439 4.17188 22.7529L4.17197 19.7529M18.256 25.0559C13.1829 25.0559 9.07037 22.6815 9.07037 19.7526C9.07037 17.7426 11.0071 15.9938 13.8618 15.0943C13.1495 15.8479 12.7446 16.7123 12.7446 17.6312C12.7446 20.5602 16.8571 22.9345 21.9302 22.9345C23.5219 22.9345 25.0191 22.7008 26.3243 22.2895C24.7663 23.9377 21.7373 25.0559 18.256 25.0559ZM18.8683 14.4493L18.692 15.1617C18.6151 15.4728 18.1917 15.7173 17.6528 15.7617L16.4188 15.8635L17.6528 15.9653C18.1917 16.0097 18.6151 16.2541 18.692 16.5653L18.8683 17.2777L19.0446 16.5653C19.1216 16.2541 19.545 16.0097 20.0838 15.9653L21.3178 15.8635L20.0838 15.7617C19.545 15.7173 19.1216 15.4728 19.0446 15.1617L18.8683 14.4493ZM23.7673 16.5706L23.5488 17.9582C23.4974 18.2846 23.0643 18.5479 22.5023 18.5942L21.3178 18.6919L22.5023 18.7896C23.0643 18.8359 23.4974 19.0992 23.5488 19.4256L23.7673 20.8132L23.9858 19.4256C24.0372 19.0992 24.4703 18.8359 25.0323 18.7896L26.2168 18.6919L25.0323 18.5942C24.4703 18.5479 24.0372 18.2846 23.9858 17.9582L23.7673 16.5706Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+    
+</svg>
+</button>
+</div>
+</div>
+<div  id="Spac_ECkFo1-gk" data-vp="" class="lay_nvune3 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+</div>
+<div  id="components-sidebar" data-vp="" class="lay_OWszu3 pos_k8lNC4 mapa_CrkEb2 vis_PMQ7Z1 ">
+<ul  id="List_syxbb4-gk" data-vp="" class="lay_QJy9D4 pos_e8wtf3 mapa_bnttp vis_5FReC2 ">
+<li  id="menu-/ui/components/accordion" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_z0cmD4-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/accordion">
+<p  id="Text_ipSos1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Accordion</p>
+</a>
+</li>
+<li  id="menu-/ui/components/alert" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_hywlT-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/alert">
+<p  id="Text_MCdSS-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Alert</p>
+</a>
+</li>
+<li  id="menu-/ui/components/button" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_0q8KA-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/button">
+<p  id="Text_OMBJT4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Button</p>
+</a>
+</li>
+<li  id="menu-/ui/components/carousel" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_cuUsG1-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/carousel">
+<p  id="Text_ogVko2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Carousel</p>
+</a>
+</li>
+<li  id="menu-/ui/components/chart" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_MNa1v2-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/chart">
+<p  id="Text_5C3754-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Chart</p>
+</a>
+</li>
+<li  id="menu-/ui/components/checkbox" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_RmfWc-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/checkbox">
+<p  id="Text_vNJy2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Checkbox</p>
+</a>
+</li>
+<li  id="menu-/ui/components/combobox" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_icSrQ2-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/combobox">
+<p  id="Text_7ZauH4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Combobox</p>
+</a>
+</li>
+<li  id="menu-/ui/components/commandpalette" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_B9Qnk2-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/commandpalette">
+<p  id="Text_v22hw-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">CommandPalette</p>
+</a>
+</li>
+<li  id="menu-/ui/components/datepicker" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_UHhtH2-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/datepicker">
+<p  id="Text_Bafau1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">DatePicker</p>
+</a>
+</li>
+<li  id="menu-/ui/components/dialog" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_YQkNj1-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/dialog">
+<p  id="Text_P8XOf1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Dialog</p>
+</a>
+</li>
+<li  id="menu-/ui/components/drawer" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_326nb-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/drawer">
+<p  id="Text_JB69c4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Drawer</p>
+</a>
+</li>
+<li  id="menu-/ui/components/marquee" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_E9J453-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/marquee">
+<p  id="Text_GCQW01-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Marquee</p>
+</a>
+</li>
+<li  id="menu-/ui/components/radio" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_eSZOs3-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/radio">
+<p  id="Text_yoH1F2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Radio</p>
+</a>
+</li>
+<li  id="menu-/ui/components/select" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_k4fyf1-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/select">
+<p  id="Text_xdEdJ3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Select</p>
+</a>
+</li>
+<li  id="menu-/ui/components/sidebar" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_tTMRr-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/sidebar">
+<p  id="Text_9bbQh2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Sidebar</p>
+</a>
+</li>
+<li  id="menu-/ui/components/slider" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_xONJi2-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/slider">
+<p  id="Text_okuJS2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Slider</p>
+</a>
+</li>
+<li  id="menu-/ui/components/switch" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_StOjk1-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/switch">
+<p  id="Text_oLCzU1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Switch</p>
+</a>
+</li>
+<li  id="menu-/ui/components/table" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_sMh7r2-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/table">
+<p  id="Text_VdWO04-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Table</p>
+</a>
+</li>
+<li  id="menu-/ui/components/tabs" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_vR9EK-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/tabs">
+<p  id="Text_hXhRJ2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Tabs</p>
+</a>
+</li>
+<li  id="menu-/ui/components/textfield" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_kC75r2-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/textfield">
+<p  id="Text_KzcIF4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">TextField</p>
+</a>
+</li>
+<li  id="menu-/ui/components/toasts" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_ImHwX4-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/toasts">
+<p  id="Text_b4QJj1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Toasts</p>
+</a>
+</li>
+<li  id="menu-/ui/components/tooltip" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_wZ3p intr_Ad3Sa ">
+<a  id="Link_LGws3-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/tooltip">
+<p  id="Text_kvEMx3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_Lprg33 ">Tooltip</p>
+</a>
+</li>
+<li  id="menu-/ui/components/progress" data-vp="" class="lay_WAJEb3 pos_e8wtf3 mapa_CrkEb2 vis_GacEd3 intr_96IpU1 ">
+<a  id="Link_ScpaN3-gk" data-vp="" class="lay_DNi8R1 pos_e8wtf3 mapa_3Qb5v vis_f9vTm2 " href="/ui/components/progress">
+<p  id="Text_YcXsZ4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_f16lO3 ">Progress Bar/Circle</p>
+</a>
+</li>
+</ul>
+</div>
+<div  id="Flex_YWfq21-gk" data-vp="" class="lay_XC0ie pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_tvVg62-gk" data-vp="" class="lay_cZ1KB4 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_4DkL92-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_Ep3y94 ">tooltip-ui ⇒</p>
+<p  id="Text_xZEAC4-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_X2tg31 ">tooltip-ui</p>
+<p  id="Text_0BFVz1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_o0WnN ">A collection of ready-to-use tooltip components built on top of Vapor, copy and paste into your apps.</p>
+</div>
+<div  id="Flex_63PkH-gk" data-vp="" class="lay_04E7E4 pos_e8wtf3 mapa_jHAIQ vis_PMQ7Z1 ">
+<p  id="Text_RmjpY2-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Basic</p>
+<p  id="Text_BGtVr1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">A simple tooltip with a Title and Content.</p>
+<div  id="Flex_ewieC1-gk" data-vp="" class="lay_agOyD4 pos_e8wtf3 mapa_3RP2h2 vis_pe16U2 ">
+<div  id="Flex_L4jdN1-gk" data-vp="" class="lay_Hi19x pos_fWSZL1 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_94CNC2-gk" data-vp="" class="lay_Owo7D2 pos_e8wtf3 mapa_KGcH53 vis_XBPWQ1 intr_rfT7n1 ">
+<p  id="Text_6efxO4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_lWme13 ">Hover Me</p>
+</div>
+</div>
+</div>
+<div  id="Flex_EJRXF3-gk" data-vp="" class="lay_DLEtj3 pos_e8wtf3 mapa_rPfvm1 vis_UwCOT2 ">
+<div  id="Flex_DyAZD2-gk" data-vp="" class="lay_DLEtj3 pos_e8wtf3 mapa_cLPMR vis_HkXHJ2 ">
+<div  id="Flex_iiFw14-gk" data-vp="" class="lay_DgBhg2 pos_e8wtf3 mapa_jigL04 vis_PMQ7Z1 ">
+<div  id="Flex_P3oO73-gk" data-vp="" class="lay_yIkX62 pos_e8wtf3 mapa_rPfvm1 vis_XslkZ1 ">
+<p  id="Text_93jBH3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_m5hh3 ">BasicTooltip</p>
+</div>
+</div>
+<div  id="Flex_jGYq73-gk" data-vp="" class="lay_q8rEj1 pos_e8wtf3 mapa_CrkEb2 vis_4dMax2 ">
+<div  id="Flex_l5bFg1-gk" data-vp="" class="lay_CenWL3 pos_t0s233 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_RdEPY3-gk" data-vp="" class="lay_RE1WF pos_xZOnm mapa_i7ad82 vis_PMQ7Z1 ">
+<div  id="Flex_SfukW1-gk" data-vp="" class="lay_VjhrA2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<button  id="CtxB_mPLaH4-gk" data-vp="" class="lay_jXzf62 pos_t0s233 mapa_CrkEb2 vis_OJf8y intr_yhwcM2 "aria-label="copy-code-button">
+<i  id="Icon_NNChb4-gk" data-vp="" class="bi bi-clipboard lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_vH8IV3 ">
+</i>
+</button>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 140"   id="Svg_ve5651-gk" data-vp="" class="lay_9Tg063 pos_e8wtf3 mapa_CrkEb2 vis_17D2N1 ">
+
+<g>
+	<g>
+		<polygon points="46,22 28,44 19,30"/>
+		<polygon points="46,22 33,33 28,44 22,44 22,95 31,95 20,100 12,117 0,117 0,22" shape-rendering="crispEdges"/>
+		<polygon points="31,95 12,117 4,106"/>
+	</g>
+	<g>
+		<polygon points="56,22 62,36 37,44"/>
+		<polygon points="56,22 111,22 111,44 37,44 56,32" shape-rendering="crispEdges"/>
+		<polygon points="116,95 97,117 90,104"/>
+		<polygon points="116,95 100,104 97,117 42,117 42,95" shape-rendering="crispEdges"/>
+		<polygon points="150,0 52,117 3,140 101,22"/>
+	</g>
+	<g>
+		<polygon points="141,22 140,40 122,45"/>
+		<polygon points="153,22 153,117 106,117 120,105 125,95 131,95 131,45 122,45 132,36 141,22" shape-rendering="crispEdges"/>
+		<polygon points="125,95 130,110 106,117"/>
+	</g>
+</g>
+
+</svg>
+</div>
+</div>
+<div  id="Flex_ngOe22-gk" data-vp="" class="lay_PVCm32 pos_e8wtf3 mapa_D4ibq2 vis_PMQ7Z1 ">
+<div  id="Flex_1ZE3Y4-gk" data-vp="" class="lay_ZHCq61 pos_t0s233 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_UQcpr-gk" data-vp="" style="transform: translate3d(0px, 0px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_4TwLS4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">1</p>
+<div  id="Flex_qzeFI4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_dL59l-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">Tooltip.</p>
+<p  id="Text_rXfj51-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">simple</p>
+<p  id="Text_lhaeL2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_OVo6Q3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;Hover Me&quot;</p>
+<p  id="Text_JQzuj-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">,</p>
+<p  id="Text_5r9ik-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;This is a tooltip&quot;</p>
+<p  id="Text_BmYXq3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p  id="Text_eCMcy-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">With a Custom Trigger</p>
+<p  id="Text_BII0w2-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Tooltips can be triggered by a custom component.</p>
+<div  id="Flex_Jw77P1-gk" data-vp="" class="lay_agOyD4 pos_e8wtf3 mapa_3RP2h2 vis_pe16U2 ">
+<div  id="Flex_bk0XR3-gk" data-vp="" class="lay_CC1qM3 pos_VHnPC1 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_oDRpe1-gk" data-vp="" class="lay_u32Lx1 pos_e8wtf3 mapa_GjRnP2 vis_Nmwxy3 intr_mMpZ81 ">
+<p  id="Text_0Jog31-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_am2k32 ">Custom Tooltip</p>
+</div>
+</div>
+</div>
+<div  id="Flex_PN0pQ1-gk" data-vp="" class="lay_DLEtj3 pos_e8wtf3 mapa_rPfvm1 vis_UwCOT2 ">
+<div  id="Flex_MVKr23-gk" data-vp="" class="lay_DLEtj3 pos_e8wtf3 mapa_cLPMR vis_HkXHJ2 ">
+<div  id="Flex_2KK7Z4-gk" data-vp="" class="lay_DgBhg2 pos_e8wtf3 mapa_jigL04 vis_PMQ7Z1 ">
+<div  id="Flex_re5Mv2-gk" data-vp="" class="lay_yIkX62 pos_e8wtf3 mapa_rPfvm1 vis_XslkZ1 ">
+<p  id="Text_c8FBn1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_m5hh3 ">TooltipTrigger</p>
+</div>
+</div>
+<div  id="Flex_MzHYj1-gk" data-vp="" class="lay_q8rEj1 pos_e8wtf3 mapa_CrkEb2 vis_4dMax2 ">
+<div  id="Flex_NiZqO4-gk" data-vp="" class="lay_CenWL3 pos_t0s233 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_wuRWe3-gk" data-vp="" class="lay_RE1WF pos_xZOnm mapa_i7ad82 vis_PMQ7Z1 ">
+<div  id="Flex_7Nsdd4-gk" data-vp="" class="lay_VjhrA2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<button  id="CtxB_ZFVsY2-gk" data-vp="" class="lay_jXzf62 pos_t0s233 mapa_CrkEb2 vis_OJf8y intr_yhwcM2 "aria-label="copy-code-button">
+<i  id="Icon_oX60o3-gk" data-vp="" class="bi bi-clipboard lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_vH8IV3 ">
+</i>
+</button>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 140"   id="Svg_OHrNh3-gk" data-vp="" class="lay_9Tg063 pos_e8wtf3 mapa_CrkEb2 vis_17D2N1 ">
+
+<g>
+	<g>
+		<polygon points="46,22 28,44 19,30"/>
+		<polygon points="46,22 33,33 28,44 22,44 22,95 31,95 20,100 12,117 0,117 0,22" shape-rendering="crispEdges"/>
+		<polygon points="31,95 12,117 4,106"/>
+	</g>
+	<g>
+		<polygon points="56,22 62,36 37,44"/>
+		<polygon points="56,22 111,22 111,44 37,44 56,32" shape-rendering="crispEdges"/>
+		<polygon points="116,95 97,117 90,104"/>
+		<polygon points="116,95 100,104 97,117 42,117 42,95" shape-rendering="crispEdges"/>
+		<polygon points="150,0 52,117 3,140 101,22"/>
+	</g>
+	<g>
+		<polygon points="141,22 140,40 122,45"/>
+		<polygon points="153,22 153,117 106,117 120,105 125,95 131,95 131,45 122,45 132,36 141,22" shape-rendering="crispEdges"/>
+		<polygon points="125,95 130,110 106,117"/>
+	</g>
+</g>
+
+</svg>
+</div>
+</div>
+<div  id="Flex_tEAyL1-gk" data-vp="" class="lay_PVCm32 pos_e8wtf3 mapa_D4ibq2 vis_PMQ7Z1 ">
+<div  id="Flex_YyN3C4-gk" data-vp="" class="lay_Wkni62 pos_t0s233 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_6b4jL3-gk" data-vp="" style="transform: translate3d(0px, 0px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_5brNy3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">1</p>
+<div  id="Flex_CRaKP-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_zLZD73-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_nYxFt3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Vapor = @import(</p>
+<p  id="Text_bnRbx2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;vapor&quot;</p>
+<p  id="Text_Tvp2t2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">);</p>
+</div>
+</div>
+<div  id="Flex_bZ0dv1-gk" data-vp="" style="transform: translate3d(0px, 22.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_IkTWh2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">2</p>
+<div  id="Flex_yMgKw3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_z7TUX1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_mgai32-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Text = Vapor.Text;</p>
+</div>
+</div>
+<div  id="Flex_nbrFg1-gk" data-vp="" style="transform: translate3d(0px, 45px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_M15PO1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">3</p>
+<div  id="Flex_mWxAb3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_eH9Pj3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_9eufe1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Row = Vapor.Row;</p>
+</div>
+</div>
+<div  id="Flex_YguB12-gk" data-vp="" style="transform: translate3d(0px, 67.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_bLK2O-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">4</p>
+<div  id="Flex_pL2dg3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_uOFDp1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_EDMSO1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Opaque = @import(</p>
+<p  id="Text_Kvt0X1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;opaque-ui&quot;</p>
+<p  id="Text_awql93-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">);</p>
+</div>
+</div>
+<div  id="Flex_cXkfG1-gk" data-vp="" style="transform: translate3d(0px, 90px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_8QVlb3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">5</p>
+<div  id="Flex_LS3q12-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_i3djB-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_Zjhtu-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Tooltip = Opaque.Tooltip;</p>
+</div>
+</div>
+<div  id="Flex_bwAc32-gk" data-vp="" style="transform: translate3d(0px, 112.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Uy3Ld3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">6</p>
+<div  id="Flex_Hy6iz2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_rSBj23-gk" data-vp="" style="transform: translate3d(0px, 135px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Thja54-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">7</p>
+<div  id="Flex_l7snq3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_2h0X92-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_N2h3i2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_RLykf3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">TooltipTrigger</p>
+<p  id="Text_XXLH91-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(title: []</p>
+<p  id="Text_5maPS2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_BKB6a2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> u8) void {</p>
+</div>
+</div>
+<div  id="Flex_KRxEC-gk" data-vp="" style="transform: translate3d(0px, 157.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_AQJqE2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">8</p>
+<div  id="Flex_Wm78v-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_xSCGV4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">    </p>
+<p  id="Text_IDj5D3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Row</p>
+<p  id="Text_5E44D-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">()</p>
+</div>
+</div>
+<div  id="Flex_8VAxX2-gk" data-vp="" style="transform: translate3d(0px, 180px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_pHMoo1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">9</p>
+<div  id="Flex_LvSfF4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_Id5Y14-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_vImvv2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">width</p>
+<p  id="Text_eQINm-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.fit)</p>
+</div>
+</div>
+<div  id="Flex_1HW7v2-gk" data-vp="" style="transform: translate3d(0px, 202.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_O3V4s-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">10</p>
+<div  id="Flex_YWyrH2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_hnRDo2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_WHzwp3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">padding</p>
+<p  id="Text_mTzhF-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_x7B3l-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">xy</p>
+<p  id="Text_Ggrxi2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_jRNrl1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">12</p>
+<p  id="Text_uDIj11-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_JZbqA4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">8</p>
+<p  id="Text_j8Hsg1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_dQqli-gk" data-vp="" style="transform: translate3d(0px, 225px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_UEnJE1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">11</p>
+<div  id="Flex_jf7bI3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_M1TLm-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_3SmRP-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">cursor</p>
+<p  id="Text_3zvr74-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.pointer)</p>
+</div>
+</div>
+<div  id="Flex_bis8p3-gk" data-vp="" style="transform: translate3d(0px, 247.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_U44Xm2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">12</p>
+<div  id="Flex_8WxkQ-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_t1MQr2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_SrGFL2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">background</p>
+<p  id="Text_uDJUe1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_A4C0W1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_hb66h1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.background))</p>
+</div>
+</div>
+<div  id="Flex_WWhFE-gk" data-vp="" style="transform: translate3d(0px, 270px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_JTxg92-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">13</p>
+<div  id="Flex_ok9ql-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_TMhCO3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_YA3HM4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">hover</p>
+<p  id="Text_RSyD6-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.{</p>
+</div>
+</div>
+<div  id="Flex_AnXS51-gk" data-vp="" style="transform: translate3d(0px, 292.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_S3q4v1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">14</p>
+<div  id="Flex_vkvko2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_R2UcJ3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .background = .</p>
+<p  id="Text_riZ0a3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_pFNz41-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.tint),</p>
+</div>
+</div>
+<div  id="Flex_OtuWv2-gk" data-vp="" style="transform: translate3d(0px, 315px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_3o06K2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">15</p>
+<div  id="Flex_uaWuK4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_Ap42Z2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .text_color = .</p>
+<p  id="Text_w8Mxq2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_zg7dJ3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.background),</p>
+</div>
+</div>
+<div  id="Flex_N9TTM4-gk" data-vp="" style="transform: translate3d(0px, 337.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_VvDGr2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">16</p>
+<div  id="Flex_M4E3q1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_BFRRU2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        })</p>
+</div>
+</div>
+<div  id="Flex_U7Uj53-gk" data-vp="" style="transform: translate3d(0px, 360px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_n8YCS4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">17</p>
+<div  id="Flex_eREwB1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_3J5v1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_F8fOa1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">font</p>
+<p  id="Text_j1bp02-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_fQln5-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">14</p>
+<p  id="Text_3CdHR1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_jp5bm1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">300</p>
+<p  id="Text_OtbNs3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, .</p>
+<p  id="Text_skA8h2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_bld1a2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.text_color))</p>
+</div>
+</div>
+<div  id="Flex_3hi222-gk" data-vp="" style="transform: translate3d(0px, 382.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_NZjLo1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">18</p>
+<div  id="Flex_lZIjB3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_ol7at3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_GXdgQ2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">duration</p>
+<p  id="Text_igRj42-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_hCaEF2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">200</p>
+<p  id="Text_Jgrdv2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_qIwIJ-gk" data-vp="" style="transform: translate3d(0px, 405px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_eyHM14-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">19</p>
+<div  id="Flex_KNro94-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_BVBxH4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_w6QpG3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">border</p>
+<p  id="Text_jxugt1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_rVbpZ1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">round</p>
+<p  id="Text_KqlJd-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.transparent, .</p>
+<p  id="Text_MM7xv3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">all</p>
+<p  id="Text_hOkQc2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_tBb5d3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">4</p>
+<p  id="Text_s4luI2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)))</p>
+</div>
+</div>
+<div  id="Flex_W3qOy3-gk" data-vp="" style="transform: translate3d(0px, 427.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_056qZ3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">20</p>
+<div  id="Flex_5cYAF3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_geTgq2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_Id0ju1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">layout</p>
+<p  id="Text_HT18f3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.center)</p>
+</div>
+</div>
+<div  id="Flex_9dhrr2-gk" data-vp="" style="transform: translate3d(0px, 450px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_ZEof82-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">21</p>
+<div  id="Flex_0LeH83-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_Bhbxn3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_0Yj061-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">children</p>
+<p  id="Text_wJKt94-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">({</p>
+</div>
+</div>
+<div  id="Flex_xvs9w1-gk" data-vp="" style="transform: translate3d(0px, 472.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Qtq153-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">22</p>
+<div  id="Flex_yMbct3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_7rjrA1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        </p>
+<p  id="Text_0uhPH4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Text</p>
+<p  id="Text_N1PeF4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(title)</p>
+</div>
+</div>
+<div  id="Flex_ggWft-gk" data-vp="" style="transform: translate3d(0px, 495px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_BzHdi2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">23</p>
+<div  id="Flex_p0Nfx1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_lg7Lo-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_KtcyX3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">font</p>
+<p  id="Text_eKYKb3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_EwbiL-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">14</p>
+<p  id="Text_nzNfb2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_NCBbp1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">300</p>
+<p  id="Text_P3pD63-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, null)</p>
+</div>
+</div>
+<div  id="Flex_nKZkw3-gk" data-vp="" style="transform: translate3d(0px, 517.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Hzef14-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">24</p>
+<div  id="Flex_abvmx1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_0u9gM2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_yqzNk2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">end</p>
+<p  id="Text_Fjki72-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">();</p>
+</div>
+</div>
+<div  id="Flex_3vqCu3-gk" data-vp="" style="transform: translate3d(0px, 540px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_bMRIO4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">25</p>
+<div  id="Flex_rkZpR-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_aTSP91-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">    });</p>
+</div>
+</div>
+<div  id="Flex_0ztw71-gk" data-vp="" style="transform: translate3d(0px, 562.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_loz7T4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">26</p>
+<div  id="Flex_f1lKm-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_xLbT3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">}</p>
+</div>
+</div>
+<div  id="Flex_LY2pY2-gk" data-vp="" style="transform: translate3d(0px, 585px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_OAc5m-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">27</p>
+<div  id="Flex_97UrS1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_loxWA1-gk" data-vp="" style="transform: translate3d(0px, 607.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_KRdot2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">28</p>
+<div  id="Flex_GtVyZ-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_CERsK-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">pub</p>
+<p  id="Text_7ODL8-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_XiVr01-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_wKS881-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_lHJKL2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">render</p>
+<p  id="Text_mjJYc-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">() void {</p>
+</div>
+</div>
+<div  id="Flex_zcruC1-gk" data-vp="" style="transform: translate3d(0px, 630px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Doo5m2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">29</p>
+<div  id="Flex_y94Ee3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_lWNLF-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">    Tooltip.</p>
+<p  id="Text_xpX5Z4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">create</p>
+<p  id="Text_7Qa3K3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.{ .content = </p>
+<p  id="Text_umo5T3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;This is a custom trigger tooltip&quot;</p>
+<p  id="Text_u8eRV3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> })</p>
+</div>
+</div>
+<div  id="Flex_Q0CPY1-gk" data-vp="" style="transform: translate3d(0px, 652.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Wha8Q-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">30</p>
+<div  id="Flex_7BrUn1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_UVbC4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_AA73a4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Trigger</p>
+<p  id="Text_siraY1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(TooltipTrigger, .{</p>
+<p  id="Text_GFbSN1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;Custom Tooltip&quot;</p>
+<p  id="Text_Es1vA-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">})</p>
+</div>
+</div>
+<div  id="Flex_OPxwY1-gk" data-vp="" style="transform: translate3d(0px, 675px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_gNZEk3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">31</p>
+<div  id="Flex_qe0Qe4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_kOpnF-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_sGLIp1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">end</p>
+<p  id="Text_j6iJ91-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">();</p>
+</div>
+</div>
+<div  id="Flex_7DzZh1-gk" data-vp="" style="transform: translate3d(0px, 697.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_nUW6f4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">32</p>
+<div  id="Flex_zRMOa1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_DQtfh3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">}</p>
+</div>
+</div>
+<div  id="Flex_p9Pmm3-gk" data-vp="" style="transform: translate3d(0px, 720px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_690uD4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">33</p>
+<div  id="Flex_uMvGO-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p  id="Text_9iezJ1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Custom Content and Custom Trigger</p>
+<p  id="Text_s4c0V-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">A Tooltip can have custom content and a custom trigger.</p>
+<div  id="Flex_CZczT-gk" data-vp="" class="lay_agOyD4 pos_e8wtf3 mapa_3RP2h2 vis_pe16U2 ">
+<div  id="Flex_znxU13-gk" data-vp="" class="lay_CC1qM3 pos_axZS83 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_lmHt93-gk" data-vp="" class="lay_u32Lx1 pos_e8wtf3 mapa_GjRnP2 vis_Nmwxy3 intr_mMpZ81 ">
+<p  id="Text_DgPmQ-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_am2k32 ">Custom Tooltip with Custom Content</p>
+</div>
+</div>
+</div>
+<div  id="Flex_bKe1q3-gk" data-vp="" class="lay_DLEtj3 pos_e8wtf3 mapa_rPfvm1 vis_UwCOT2 ">
+<div  id="Flex_Nxy7M2-gk" data-vp="" class="lay_DLEtj3 pos_e8wtf3 mapa_cLPMR vis_HkXHJ2 ">
+<div  id="Flex_dhmEK1-gk" data-vp="" class="lay_DgBhg2 pos_e8wtf3 mapa_jigL04 vis_PMQ7Z1 ">
+<div  id="Flex_xdmXU3-gk" data-vp="" class="lay_yIkX62 pos_e8wtf3 mapa_rPfvm1 vis_XslkZ1 ">
+<p  id="Text_EAjHz3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_m5hh3 ">TooltipContent</p>
+</div>
+</div>
+<div  id="Flex_komkS1-gk" data-vp="" class="lay_q8rEj1 pos_e8wtf3 mapa_CrkEb2 vis_4dMax2 ">
+<div  id="Flex_MTPOW2-gk" data-vp="" class="lay_CenWL3 pos_t0s233 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_gG1Of-gk" data-vp="" class="lay_RE1WF pos_xZOnm mapa_i7ad82 vis_PMQ7Z1 ">
+<div  id="Flex_xEHn73-gk" data-vp="" class="lay_VjhrA2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<button  id="CtxB_qYuw6-gk" data-vp="" class="lay_jXzf62 pos_t0s233 mapa_CrkEb2 vis_OJf8y intr_yhwcM2 "aria-label="copy-code-button">
+<i  id="Icon_dR32x-gk" data-vp="" class="bi bi-clipboard lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_vH8IV3 ">
+</i>
+</button>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 140"   id="Svg_EYkCV4-gk" data-vp="" class="lay_9Tg063 pos_e8wtf3 mapa_CrkEb2 vis_17D2N1 ">
+
+<g>
+	<g>
+		<polygon points="46,22 28,44 19,30"/>
+		<polygon points="46,22 33,33 28,44 22,44 22,95 31,95 20,100 12,117 0,117 0,22" shape-rendering="crispEdges"/>
+		<polygon points="31,95 12,117 4,106"/>
+	</g>
+	<g>
+		<polygon points="56,22 62,36 37,44"/>
+		<polygon points="56,22 111,22 111,44 37,44 56,32" shape-rendering="crispEdges"/>
+		<polygon points="116,95 97,117 90,104"/>
+		<polygon points="116,95 100,104 97,117 42,117 42,95" shape-rendering="crispEdges"/>
+		<polygon points="150,0 52,117 3,140 101,22"/>
+	</g>
+	<g>
+		<polygon points="141,22 140,40 122,45"/>
+		<polygon points="153,22 153,117 106,117 120,105 125,95 131,95 131,45 122,45 132,36 141,22" shape-rendering="crispEdges"/>
+		<polygon points="125,95 130,110 106,117"/>
+	</g>
+</g>
+
+</svg>
+</div>
+</div>
+<div  id="Flex_e0XWe3-gk" data-vp="" class="lay_PVCm32 pos_e8wtf3 mapa_D4ibq2 vis_PMQ7Z1 ">
+<div  id="Flex_cBuwZ4-gk" data-vp="" class="lay_Iq7NY2 pos_t0s233 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_6Q9sY4-gk" data-vp="" style="transform: translate3d(0px, 0px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_fPqFW1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">1</p>
+<div  id="Flex_BylrN-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_rOm2P1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_DVSh63-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Vapor = @import(</p>
+<p  id="Text_D5EUy1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;vapor&quot;</p>
+<p  id="Text_JmY6K1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">);</p>
+</div>
+</div>
+<div  id="Flex_T7lF14-gk" data-vp="" style="transform: translate3d(0px, 22.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_7T9El3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">2</p>
+<div  id="Flex_uRpNp3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_g4AEF-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_THvWk1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Text = Vapor.Text;</p>
+</div>
+</div>
+<div  id="Flex_cGciQ4-gk" data-vp="" style="transform: translate3d(0px, 45px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_LJErn2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">3</p>
+<div  id="Flex_HJtWy3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_9d2Mm3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_oB5VK4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Row = Vapor.Row;</p>
+</div>
+</div>
+<div  id="Flex_O5BD5-gk" data-vp="" style="transform: translate3d(0px, 67.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_zHvKX1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">4</p>
+<div  id="Flex_DuuZc-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_Qv0JR4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_1OPLv2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Stack = Vapor.Stack;</p>
+</div>
+</div>
+<div  id="Flex_CrVmB-gk" data-vp="" style="transform: translate3d(0px, 90px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_NT8iB-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">5</p>
+<div  id="Flex_CtjjA4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_kUnyT4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_6ZJvX1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Icon = Vapor.Icon;</p>
+</div>
+</div>
+<div  id="Flex_exnrd3-gk" data-vp="" style="transform: translate3d(0px, 112.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_uYT401-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">6</p>
+<div  id="Flex_u0hhZ2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_6WpPW3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_5budl1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Opaque = @import(</p>
+<p  id="Text_AaZ8f-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;opaque-ui&quot;</p>
+<p  id="Text_9ZehV4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">);</p>
+</div>
+</div>
+<div  id="Flex_gm2l4-gk" data-vp="" style="transform: translate3d(0px, 135px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_g2qod2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">7</p>
+<div  id="Flex_TvAs74-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_18wF63-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_1qymD-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Tooltip = Opaque.Tooltip;</p>
+</div>
+</div>
+<div  id="Flex_IiJAb1-gk" data-vp="" style="transform: translate3d(0px, 157.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_kh8SF3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">8</p>
+<div  id="Flex_vlTFz3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_cZSZn2-gk" data-vp="" style="transform: translate3d(0px, 180px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_LZs26-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">9</p>
+<div  id="Flex_de8gW3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_8k3R32-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_HXDlp1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_oBbjJ4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">TooltipTrigger</p>
+<p  id="Text_4cMTY4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(title: []</p>
+<p  id="Text_S3ucQ-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_XNz5w1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> u8) void {</p>
+</div>
+</div>
+<div  id="Flex_LGxMI1-gk" data-vp="" style="transform: translate3d(0px, 202.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_zBEgg1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">10</p>
+<div  id="Flex_SN0RA-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_0uQPd4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">    </p>
+<p  id="Text_0Xpr51-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Row</p>
+<p  id="Text_5y9Ax2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">()</p>
+</div>
+</div>
+<div  id="Flex_lQzjU2-gk" data-vp="" style="transform: translate3d(0px, 225px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_QVLXU1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">11</p>
+<div  id="Flex_0f3rd-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_MVKFV4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_meia5-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">width</p>
+<p  id="Text_LZ7bB3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.fit)</p>
+</div>
+</div>
+<div  id="Flex_SQhU13-gk" data-vp="" style="transform: translate3d(0px, 247.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_eLFvw1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">12</p>
+<div  id="Flex_fjUea2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_J7mZZ2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_nZgz3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">padding</p>
+<p  id="Text_ctLLo1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_PTBL31-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">xy</p>
+<p  id="Text_FJ8XV-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_wN6yY-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">12</p>
+<p  id="Text_lKpxt3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_f7cF9-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">8</p>
+<p  id="Text_qSWzO1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_6plFY2-gk" data-vp="" style="transform: translate3d(0px, 270px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_LGHFK1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">13</p>
+<div  id="Flex_lETBV-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_3fHib1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_LuNJ31-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">cursor</p>
+<p  id="Text_7U2SX-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.pointer)</p>
+</div>
+</div>
+<div  id="Flex_Z6PPM-gk" data-vp="" style="transform: translate3d(0px, 292.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_sHwvC2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">14</p>
+<div  id="Flex_Gt9uM2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_NSjjK-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_ZKyhf2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">background</p>
+<p  id="Text_QkBoO4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_leD3o2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_xzkY53-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.background))</p>
+</div>
+</div>
+<div  id="Flex_GMJ1x1-gk" data-vp="" style="transform: translate3d(0px, 315px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_UEMjF2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">15</p>
+<div  id="Flex_c5lth2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_EGCbr3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_GCKsb2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">hover</p>
+<p  id="Text_lqvcq1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.{</p>
+</div>
+</div>
+<div  id="Flex_hAhwN1-gk" data-vp="" style="transform: translate3d(0px, 337.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_SI2Ec1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">16</p>
+<div  id="Flex_8GvBg-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_82T0K4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .background = .</p>
+<p  id="Text_Hb3Wg2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_lGVvv-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.tint),</p>
+</div>
+</div>
+<div  id="Flex_llEXc3-gk" data-vp="" style="transform: translate3d(0px, 360px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Ic7YG2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">17</p>
+<div  id="Flex_tJyrm-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_K8FBe4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .text_color = .</p>
+<p  id="Text_ppXqx1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_CTD612-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.background),</p>
+</div>
+</div>
+<div  id="Flex_ymilF2-gk" data-vp="" style="transform: translate3d(0px, 382.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_FjxrH4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">18</p>
+<div  id="Flex_txylJ-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_IIJUo-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        })</p>
+</div>
+</div>
+<div  id="Flex_HoHox-gk" data-vp="" style="transform: translate3d(0px, 405px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_YezWS2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">19</p>
+<div  id="Flex_1YGor1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_ZjLvu2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_DjP5v-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">font</p>
+<p  id="Text_Ozt8U-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_iLXPT1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">14</p>
+<p  id="Text_j9mL03-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_FJDug3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">300</p>
+<p  id="Text_0RuuX3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, .</p>
+<p  id="Text_ECKro1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_Eye4C-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.text_color))</p>
+</div>
+</div>
+<div  id="Flex_AhBc4-gk" data-vp="" style="transform: translate3d(0px, 427.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_48uAD3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">20</p>
+<div  id="Flex_AMKzO1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_6Lv8l-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_1VspK4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">duration</p>
+<p  id="Text_WsleO2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_eJJ1e-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">200</p>
+<p  id="Text_2qsBg1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_puWob2-gk" data-vp="" style="transform: translate3d(0px, 450px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_60e4N1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">21</p>
+<div  id="Flex_e58iu-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_IJjWG4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_XBzXM1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">border</p>
+<p  id="Text_427kP3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_Aczv01-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">round</p>
+<p  id="Text_tGMhC3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.transparent, .</p>
+<p  id="Text_qg99U-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">all</p>
+<p  id="Text_UfUgI1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_lDZGe2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">4</p>
+<p  id="Text_ZnXuQ1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)))</p>
+</div>
+</div>
+<div  id="Flex_OK7DC3-gk" data-vp="" style="transform: translate3d(0px, 472.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_k7NFv1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">22</p>
+<div  id="Flex_MeCac-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_LzGW13-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_zh93X3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">layout</p>
+<p  id="Text_50it71-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.center)</p>
+</div>
+</div>
+<div  id="Flex_HbXXe1-gk" data-vp="" style="transform: translate3d(0px, 495px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_uLvC82-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">23</p>
+<div  id="Flex_wqsM53-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_qPWMi1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_PzHux-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">children</p>
+<p  id="Text_vXX8M-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">({</p>
+</div>
+</div>
+<div  id="Flex_yT9T53-gk" data-vp="" style="transform: translate3d(0px, 517.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_RsR9t3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">24</p>
+<div  id="Flex_nFhLn1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_zlQTQ-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        </p>
+<p  id="Text_zuPzP-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Text</p>
+<p  id="Text_FUgjd-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(title)</p>
+</div>
+</div>
+<div  id="Flex_RPLd42-gk" data-vp="" style="transform: translate3d(0px, 540px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_ytYB33-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">25</p>
+<div  id="Flex_iRcoK1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_Q51Zu3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_ALYnX2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">font</p>
+<p  id="Text_ut60n1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_RuN2a3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">14</p>
+<p  id="Text_pXDFu1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_w98nE2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">300</p>
+<p  id="Text_XRMfN3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, null)</p>
+</div>
+</div>
+<div  id="Flex_Decle2-gk" data-vp="" style="transform: translate3d(0px, 562.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_d8GqX3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">26</p>
+<div  id="Flex_0Kd7v2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_oPRDy1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_SlxJl3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">end</p>
+<p  id="Text_T3kh81-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">();</p>
+</div>
+</div>
+<div  id="Flex_qbjJ23-gk" data-vp="" style="transform: translate3d(0px, 585px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_mU7Ib3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">27</p>
+<div  id="Flex_YRLbw1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_3Cnw03-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">    });</p>
+</div>
+</div>
+<div  id="Flex_UjQnB3-gk" data-vp="" style="transform: translate3d(0px, 607.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_zhvUc3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">28</p>
+<div  id="Flex_mj1BN1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_puY6a3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">}</p>
+</div>
+</div>
+<div  id="Flex_evyiJ1-gk" data-vp="" style="transform: translate3d(0px, 630px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_4kopE4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">29</p>
+<div  id="Flex_Uyq421-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_wme3k-gk" data-vp="" style="transform: translate3d(0px, 652.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_HuOwO3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">30</p>
+<div  id="Flex_UWHM71-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_gJFcn3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_V01L81-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_CSAO9-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">TooltipContent</p>
+<p  id="Text_kxvVc2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(title: []</p>
+<p  id="Text_yRBUE3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_EL3iK3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> u8, label: []</p>
+<p  id="Text_uxJyJ2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_21f7V1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> u8, due: Vapor.DateTime) void {</p>
+</div>
+</div>
+<div  id="Flex_2rcMK1-gk" data-vp="" style="transform: translate3d(0px, 675px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_d3p7b-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">31</p>
+<div  id="Flex_5Omxc1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_b55uX2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">    </p>
+<p  id="Text_ug5UC1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Row</p>
+<p  id="Text_vnsO32-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">()</p>
+</div>
+</div>
+<div  id="Flex_5g3lz-gk" data-vp="" style="transform: translate3d(0px, 697.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_fqVXR2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">32</p>
+<div  id="Flex_lorwj3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_noQaW3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_KiLYq-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">width</p>
+<p  id="Text_zzK782-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_Yb8FO-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">px</p>
+<p  id="Text_DypHV4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_L81pV4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">280</p>
+<p  id="Text_dhpUr3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_e3KuB3-gk" data-vp="" style="transform: translate3d(0px, 720px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_1v3aH1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">33</p>
+<div  id="Flex_7N8nW2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_fiQsT1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_j6UGt3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">width</p>
+<p  id="Text_4suMG4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_Ok2oI1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">px</p>
+<p  id="Text_rK7MB3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_DrOYC4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">280</p>
+<p  id="Text_3WIhC-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_pgpd02-gk" data-vp="" style="transform: translate3d(0px, 742.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_GeDeH1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">34</p>
+<div  id="Flex_OgjY93-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_fIN141-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_YHDGI-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">padding</p>
+<p  id="Text_Mh6RK-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_gddUr-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">all</p>
+<p  id="Text_8Qc7k3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_n4WSW4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">16</p>
+<p  id="Text_vEqFP-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_xOE0x1-gk" data-vp="" style="transform: translate3d(0px, 765px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_fWuF8-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">35</p>
+<div  id="Flex_sRLNa1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_O0RCY-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_s3v9r1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">border</p>
+<p  id="Text_7cSOk3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_SfTou-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">round</p>
+<p  id="Text_ffykx-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_jxzSJ-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_eTnk82-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.border_color_light), .</p>
+<p  id="Text_oKCVa3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">all</p>
+<p  id="Text_wfQU62-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_Mrd9y-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">12</p>
+<p  id="Text_6lvtS2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)))</p>
+</div>
+</div>
+<div  id="Flex_pFcAX2-gk" data-vp="" style="transform: translate3d(0px, 787.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_A8d8N4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">36</p>
+<div  id="Flex_y4Yt34-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_YIXgn1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_BttbC-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">direction</p>
+<p  id="Text_32As13-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.column)</p>
+</div>
+</div>
+<div  id="Flex_kRxfX2-gk" data-vp="" style="transform: translate3d(0px, 810px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_oQovQ-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">37</p>
+<div  id="Flex_GkKL14-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_CKhtb4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_9nREp-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">spacing</p>
+<p  id="Text_SZeSA4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_AqWLq3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">12</p>
+<p  id="Text_yyEKX4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_Bo40Z3-gk" data-vp="" style="transform: translate3d(0px, 832.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_PLg2n3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">38</p>
+<div  id="Flex_mdn5M4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_YK486-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_ZNqVQ3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">children</p>
+<p  id="Text_SLC1n3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">({</p>
+</div>
+</div>
+<div  id="Flex_xgA9Q-gk" data-vp="" style="transform: translate3d(0px, 855px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_cW6PQ-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">39</p>
+<div  id="Flex_9Yuue2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_lbKYj-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        </p>
+<p  id="Text_V7tpT1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_2VfXk1 ">// Header with title and priority badge</p>
+</div>
+</div>
+<div  id="Flex_y98zt2-gk" data-vp="" style="transform: translate3d(0px, 877.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_wBIhz1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">40</p>
+<div  id="Flex_FM89o1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_2zuRV2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        </p>
+<p  id="Text_OPqSa2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Row</p>
+<p  id="Text_v95pb2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">()</p>
+</div>
+</div>
+<div  id="Flex_pgBj43-gk" data-vp="" style="transform: translate3d(0px, 900px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_s4akB1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">41</p>
+<div  id="Flex_EcXTZ4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_9TsyH2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_dSmlm3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">layout</p>
+<p  id="Text_vJyPW1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.x_between_center)</p>
+</div>
+</div>
+<div  id="Flex_x1xwG-gk" data-vp="" style="transform: translate3d(0px, 922.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_4bHeQ4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">42</p>
+<div  id="Flex_vs7qL4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_i5bvm2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_gf5Ai3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">children</p>
+<p  id="Text_YDQD74-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">({</p>
+</div>
+</div>
+<div  id="Flex_ry3AS2-gk" data-vp="" style="transform: translate3d(0px, 945px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_0MiSY-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">43</p>
+<div  id="Flex_NFJSD1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_ZPQ812-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            </p>
+<p  id="Text_6rn9N1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Text</p>
+<p  id="Text_8PjkS1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(title)</p>
+</div>
+</div>
+<div  id="Flex_F4qJo1-gk" data-vp="" style="transform: translate3d(0px, 967.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_D1qbC-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">44</p>
+<div  id="Flex_B4BZK1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_Q1Un13-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_epCB61-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">font</p>
+<p  id="Text_RDI9J-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_gDkcS1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">14</p>
+<p  id="Text_fTkBa4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_zdEhO4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">600</p>
+<p  id="Text_uDnp63-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, .</p>
+<p  id="Text_dMyC21-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_sELMP3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.text_color))</p>
+</div>
+</div>
+<div  id="Flex_5GMhp1-gk" data-vp="" style="transform: translate3d(0px, 990px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_52A4l3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">45</p>
+<div  id="Flex_nan2k3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_fmep91-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_XGzRr3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">fontFamily</p>
+<p  id="Text_E1pAP4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_c6XqK-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;Montserrat&quot;</p>
+<p  id="Text_KhWnD3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_sZocV2-gk" data-vp="" style="transform: translate3d(0px, 1012.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_FDSlo-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">46</p>
+<div  id="Flex_1JDg51-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_skYOB2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_N2da83-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">width</p>
+<p  id="Text_hAomo1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_Uuf1X1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">px</p>
+<p  id="Text_zzNAA1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_NUGmb1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">180</p>
+<p  id="Text_IjBl2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_Unddn3-gk" data-vp="" style="transform: translate3d(0px, 1035px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_JoSIO4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">47</p>
+<div  id="Flex_NElbM4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_gKMOo2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_q2iVG4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">ellipsis</p>
+<p  id="Text_H6c7Z2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.dot)</p>
+</div>
+</div>
+<div  id="Flex_D538p2-gk" data-vp="" style="transform: translate3d(0px, 1057.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_dSLzJ4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">48</p>
+<div  id="Flex_5LMtG2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_4T7Vw1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_PjjS8-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">end</p>
+<p  id="Text_SOudY3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">();</p>
+</div>
+</div>
+<div  id="Flex_vVXZC1-gk" data-vp="" style="transform: translate3d(0px, 1080px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_DbDnn2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">49</p>
+<div  id="Flex_8qhZC4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_y4zHI1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            </p>
+<p  id="Text_i6S2X4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Row</p>
+<p  id="Text_1rSBT4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">()</p>
+</div>
+</div>
+<div  id="Flex_nrdQw2-gk" data-vp="" style="transform: translate3d(0px, 1102.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_wAuPv1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">50</p>
+<div  id="Flex_Fapnk-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_3DSbD2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_iCLgt3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">padding</p>
+<p  id="Text_oCXlv2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_Hxn32-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">xy</p>
+<p  id="Text_ccvRx1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_Z7jIB4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">8</p>
+<p  id="Text_hGxY-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_0GNfJ4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">4</p>
+<p  id="Text_2wWO9-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_5fyvP-gk" data-vp="" style="transform: translate3d(0px, 1125px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_D0uPQ4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">51</p>
+<div  id="Flex_wovjB-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_NNVSk-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_CcTtC1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">children</p>
+<p  id="Text_9reIR3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">({</p>
+</div>
+</div>
+<div  id="Flex_KFGvl3-gk" data-vp="" style="transform: translate3d(0px, 1147.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_NFdlB3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">52</p>
+<div  id="Flex_tCWF03-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_L5SCt3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                </p>
+<p  id="Text_3fVcV-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Text</p>
+<p  id="Text_lDzCB4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(label)</p>
+</div>
+</div>
+<div  id="Flex_17NK01-gk" data-vp="" style="transform: translate3d(0px, 1170px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_hruLg1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">53</p>
+<div  id="Flex_91jRt2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_7Kogv1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    .</p>
+<p  id="Text_WGPLb4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">font</p>
+<p  id="Text_7NjqY-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_MLPkW2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">10</p>
+<p  id="Text_EF9201-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_Q55nb-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">500</p>
+<p  id="Text_mO1aA2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, .</p>
+<p  id="Text_uxluE1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_2xIBF3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.tint))</p>
+</div>
+</div>
+<div  id="Flex_JYqIH3-gk" data-vp="" style="transform: translate3d(0px, 1192.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_S8Uqf-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">54</p>
+<div  id="Flex_efSp93-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_2g0eE1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    .</p>
+<p  id="Text_I8lhz-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">fontFamily</p>
+<p  id="Text_KN6KK2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_1EbUj3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;Montserrat&quot;</p>
+<p  id="Text_UEIhn3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_dc6qD1-gk" data-vp="" style="transform: translate3d(0px, 1215px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_VICaX4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">55</p>
+<div  id="Flex_3dfMN2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_55cwX1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    .</p>
+<p  id="Text_2yJnB4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">end</p>
+<p  id="Text_m4w5T-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">();</p>
+</div>
+</div>
+<div  id="Flex_en76c4-gk" data-vp="" style="transform: translate3d(0px, 1237.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_bMy4o2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">56</p>
+<div  id="Flex_abwRf1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_E6ac21-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            });</p>
+</div>
+</div>
+<div  id="Flex_zegJK1-gk" data-vp="" style="transform: translate3d(0px, 1260px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_9wvRo3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">57</p>
+<div  id="Flex_Rg0H81-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_j8yHD4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        });</p>
+</div>
+</div>
+<div  id="Flex_wAOa03-gk" data-vp="" style="transform: translate3d(0px, 1282.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_bEU9C-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">58</p>
+<div  id="Flex_ZTmh21-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_7ez4o3-gk" data-vp="" style="transform: translate3d(0px, 1305px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_KtTnN2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">59</p>
+<div  id="Flex_3Ae4H1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_hj9Yb3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        </p>
+<p  id="Text_prqxe3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_2VfXk1 ">// Divider</p>
+</div>
+</div>
+<div  id="Flex_PDFdc1-gk" data-vp="" style="transform: translate3d(0px, 1327.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Rr0xQ2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">60</p>
+<div  id="Flex_eAebk3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_5FfJh1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        </p>
+<p  id="Text_V5ldw-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Row</p>
+<p  id="Text_Uu2dG3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">()</p>
+</div>
+</div>
+<div  id="Flex_HwhZL4-gk" data-vp="" style="transform: translate3d(0px, 1350px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_0A5O7-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">61</p>
+<div  id="Flex_YrvxJ4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_lIRvo-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_AC5UN-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">width</p>
+<p  id="Text_HZG6m3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_MB2ZO3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">percent</p>
+<p  id="Text_4NiuY2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_SsqOu1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">100</p>
+<p  id="Text_IYf0M2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_t4Q6f-gk" data-vp="" style="transform: translate3d(0px, 1372.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_9WP04-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">62</p>
+<div  id="Flex_1ZDOX3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_61fSa4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_5AuLq-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">height</p>
+<p  id="Text_QrCS93-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_FzD214-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">px</p>
+<p  id="Text_3m1T92-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_zacpw3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">1</p>
+<p  id="Text_hMANt3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_dvutX2-gk" data-vp="" style="transform: translate3d(0px, 1395px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_3FDg31-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">63</p>
+<div  id="Flex_oOBSg2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_5CK072-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_UEELZ4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">background</p>
+<p  id="Text_9OaKc4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_5QWIJ-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_CeCp14-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.border_color_light))</p>
+</div>
+</div>
+<div  id="Flex_EFKFk2-gk" data-vp="" style="transform: translate3d(0px, 1417.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_uJuxQ-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">64</p>
+<div  id="Flex_RW5Dq1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_RUUsb2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_j8wjN-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">children</p>
+<p  id="Text_ZEOcJ2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">({});</p>
+</div>
+</div>
+<div  id="Flex_9nc3h2-gk" data-vp="" style="transform: translate3d(0px, 1440px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_mXYan1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">65</p>
+<div  id="Flex_vVWM01-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_B6S6q2-gk" data-vp="" style="transform: translate3d(0px, 1462.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_YBL284-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">66</p>
+<div  id="Flex_B2zrU1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_wkpxq1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        </p>
+<p  id="Text_tozq-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_2VfXk1 ">// Details section</p>
+</div>
+</div>
+<div  id="Flex_8Tukn1-gk" data-vp="" style="transform: translate3d(0px, 1485px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_y20OU2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">67</p>
+<div  id="Flex_KBkhU4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_8WaPc2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        </p>
+<p  id="Text_1AqME-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Stack</p>
+<p  id="Text_BXLq94-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">()</p>
+</div>
+</div>
+<div  id="Flex_vAQZg3-gk" data-vp="" style="transform: translate3d(0px, 1507.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_0sxPW3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">68</p>
+<div  id="Flex_6EvzY2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_4QZxs2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_qL7mk-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">width</p>
+<p  id="Text_ekrL5-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_apReB2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">percent</p>
+<p  id="Text_2nnrk1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_vYPL5-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">100</p>
+<p  id="Text_ZKEYC2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_adLg33-gk" data-vp="" style="transform: translate3d(0px, 1530px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_dd8XB2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">69</p>
+<div  id="Flex_KYfSB4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_3j4o04-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_DJmyM3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">spacing</p>
+<p  id="Text_JFIc73-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_NSU6K3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">8</p>
+<p  id="Text_p3SIU4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_MbsuP2-gk" data-vp="" style="transform: translate3d(0px, 1552.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_hEEsI4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">70</p>
+<div  id="Flex_6giCb2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_GRUqw1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            .</p>
+<p  id="Text_HAJew3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">children</p>
+<p  id="Text_we6Ly2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">({</p>
+</div>
+</div>
+<div  id="Flex_8u3Ub1-gk" data-vp="" style="transform: translate3d(0px, 1575px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_bnVVn1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">71</p>
+<div  id="Flex_3Hv6T4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_VdYcu-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            </p>
+<p  id="Text_qw1RC3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_2VfXk1 ">// Due date</p>
+</div>
+</div>
+<div  id="Flex_XUIip2-gk" data-vp="" style="transform: translate3d(0px, 1597.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_jUhJ71-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">72</p>
+<div  id="Flex_DFqPO1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_l0btU2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            </p>
+<p  id="Text_bLeVo3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Row</p>
+<p  id="Text_i3aBy3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">()</p>
+</div>
+</div>
+<div  id="Flex_3XFtJ2-gk" data-vp="" style="transform: translate3d(0px, 1620px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_LyCz63-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">73</p>
+<div  id="Flex_ZPZO3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_KWPX1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_62WGY1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">width</p>
+<p  id="Text_rLI1K3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.</p>
+<p  id="Text_FF3vN1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">percent</p>
+<p  id="Text_dcWDz3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_QLaIB-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">100</p>
+<p  id="Text_pRBwm3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">))</p>
+</div>
+</div>
+<div  id="Flex_JEHKr3-gk" data-vp="" style="transform: translate3d(0px, 1642.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_lheQj1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">74</p>
+<div  id="Flex_Od1ny1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_zwlE84-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_vI02n3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">layout</p>
+<p  id="Text_Ezp0H-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.x_between_center)</p>
+</div>
+</div>
+<div  id="Flex_ka4Fc3-gk" data-vp="" style="transform: translate3d(0px, 1665px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_OB9H01-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">75</p>
+<div  id="Flex_3R6tP2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_8MCNF-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                .</p>
+<p  id="Text_TAiWV1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">children</p>
+<p  id="Text_9Yusz-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">({</p>
+</div>
+</div>
+<div  id="Flex_uAdq34-gk" data-vp="" style="transform: translate3d(0px, 1687.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_3lv4x-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">76</p>
+<div  id="Flex_81QYn-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_iKEfY1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                </p>
+<p  id="Text_fIEcP3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Row</p>
+<p  id="Text_RiNJG3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">()</p>
+</div>
+</div>
+<div  id="Flex_mevtX-gk" data-vp="" style="transform: translate3d(0px, 1710px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_D0wrb1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">77</p>
+<div  id="Flex_6WCW21-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_8Ttux-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    .</p>
+<p  id="Text_bg6ov-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">layout</p>
+<p  id="Text_C0o2n-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.left_center)</p>
+</div>
+</div>
+<div  id="Flex_kP1kb4-gk" data-vp="" style="transform: translate3d(0px, 1732.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_tVBsi2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">78</p>
+<div  id="Flex_hLk6e1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_QHIQh2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    .</p>
+<p  id="Text_DsJTe-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">spacing</p>
+<p  id="Text_GCYIj-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_LUHVr-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">6</p>
+<p  id="Text_eveeN-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_gVklo2-gk" data-vp="" style="transform: translate3d(0px, 1755px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_qkFI21-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">79</p>
+<div  id="Flex_CKsCi-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_AGPWm1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    .</p>
+<p  id="Text_ToHSj-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">children</p>
+<p  id="Text_zxTNA2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">({</p>
+</div>
+</div>
+<div  id="Flex_P2X7C-gk" data-vp="" style="transform: translate3d(0px, 1777.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_9mNPX4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">80</p>
+<div  id="Flex_F6HPH-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_FpXf83-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    </p>
+<p  id="Text_oo1Cz1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Icon</p>
+<p  id="Text_yfmBB-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.calendar)</p>
+</div>
+</div>
+<div  id="Flex_hXyrE1-gk" data-vp="" style="transform: translate3d(0px, 1800px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_0CEJE-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">81</p>
+<div  id="Flex_XXTfm1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_5ugN3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                        .</p>
+<p  id="Text_4FeWw3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">font</p>
+<p  id="Text_jjj6F1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_cLEWU-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">12</p>
+<p  id="Text_gb8S73-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_CpmoL3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">400</p>
+<p  id="Text_ixtza1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, .</p>
+<p  id="Text_BhGju1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_LlUFl1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.text_color))</p>
+</div>
+</div>
+<div  id="Flex_3iFkr-gk" data-vp="" style="transform: translate3d(0px, 1822.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Fw4JN1-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">82</p>
+<div  id="Flex_rGL68-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_hxZht-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                        .</p>
+<p  id="Text_0NSSd-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">end</p>
+<p  id="Text_I8yQ83-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">();</p>
+</div>
+</div>
+<div  id="Flex_EHuYZ3-gk" data-vp="" style="transform: translate3d(0px, 1845px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_7CQnG3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">83</p>
+<div  id="Flex_ch7393-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_eLr2P3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    </p>
+<p  id="Text_a7K5r1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Text</p>
+<p  id="Text_ZsvBC1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_jGJQ8-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;Due date&quot;</p>
+<p  id="Text_duvEp-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_v1zwj1-gk" data-vp="" style="transform: translate3d(0px, 1867.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_vYK2k3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">84</p>
+<div  id="Flex_cczFZ3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_wCO3R4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                        .</p>
+<p  id="Text_HCn6E2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">font</p>
+<p  id="Text_CYpnH1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_im9SO1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">12</p>
+<p  id="Text_CK70K2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_cwZat2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">400</p>
+<p  id="Text_ejK7q1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, .</p>
+<p  id="Text_mDdp82-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_AJ2Rw1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.text_color))</p>
+</div>
+</div>
+<div  id="Flex_owSGD2-gk" data-vp="" style="transform: translate3d(0px, 1890px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_zbeed3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">85</p>
+<div  id="Flex_h82Ci-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_DlRcn2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                        .</p>
+<p  id="Text_WiiV92-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">fontFamily</p>
+<p  id="Text_Bl0cw3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_uUxkQ4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;Montserrat&quot;</p>
+<p  id="Text_1Uzdw-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_Hpx2f1-gk" data-vp="" style="transform: translate3d(0px, 1912.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_jZb173-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">86</p>
+<div  id="Flex_RF7wN2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_dNY172-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                        .</p>
+<p  id="Text_x7vYz2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">end</p>
+<p  id="Text_wwzQT1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">();</p>
+</div>
+</div>
+<div  id="Flex_fwx9v-gk" data-vp="" style="transform: translate3d(0px, 1935px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_py7CB3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">87</p>
+<div  id="Flex_hMW0n-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_2EsJb4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                });</p>
+</div>
+</div>
+<div  id="Flex_ACj1A1-gk" data-vp="" style="transform: translate3d(0px, 1957.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_R7D5p3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">88</p>
+<div  id="Flex_oyluM3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_ECvoS3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                </p>
+<p  id="Text_jS7gL1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Text</p>
+<p  id="Text_1JPqr1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(due.</p>
+<p  id="Text_rvySB3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">formatDate</p>
+<p  id="Text_TWukx3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(Vapor.</p>
+<p  id="Text_xhArQ3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">arena</p>
+<p  id="Text_uNV4Z1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.frame)) </p>
+<p  id="Text_IiA534-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">catch</p>
+<p  id="Text_boJtl2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_yPk1g4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;&quot;</p>
+<p  id="Text_y3cFP-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_2nrgn-gk" data-vp="" style="transform: translate3d(0px, 1980px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_4ivXD-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">89</p>
+<div  id="Flex_mEMQD3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_D0YRB1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    .</p>
+<p  id="Text_ILAs21-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">font</p>
+<p  id="Text_aBPKO1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_e0qci-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">12</p>
+<p  id="Text_PeDFC1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_9c2Io1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">500</p>
+<p  id="Text_MGoXB1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, .</p>
+<p  id="Text_C14JO3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_DT6Rs1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.text_color))</p>
+</div>
+</div>
+<div  id="Flex_IkfJI3-gk" data-vp="" style="transform: translate3d(0px, 2002.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_KmLLZ3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">90</p>
+<div  id="Flex_Ik3u62-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_ErpZg3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    .</p>
+<p  id="Text_OxL7D-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">fontFamily</p>
+<p  id="Text_fhIPz2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_CSGsU3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;Montserrat&quot;</p>
+<p  id="Text_Jkvff1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">)</p>
+</div>
+</div>
+<div  id="Flex_661P5-gk" data-vp="" style="transform: translate3d(0px, 2025px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_mSHqr3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">91</p>
+<div  id="Flex_coQKb1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_qbH6M2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">                    .</p>
+<p  id="Text_799Sj2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">end</p>
+<p  id="Text_foIfz2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">();</p>
+</div>
+</div>
+<div  id="Flex_TYGd61-gk" data-vp="" style="transform: translate3d(0px, 2047.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_GKBuC-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">92</p>
+<div  id="Flex_YhfJf3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_Dr3yU4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">            });</p>
+</div>
+</div>
+<div  id="Flex_VPqmH3-gk" data-vp="" style="transform: translate3d(0px, 2070px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Xw7Jt3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">93</p>
+<div  id="Flex_EgYeW4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_bRcFS1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        });</p>
+</div>
+</div>
+<div  id="Flex_GNIyB-gk" data-vp="" style="transform: translate3d(0px, 2092.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_ZZtaq2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">94</p>
+<div  id="Flex_wzSVs3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_0lzjc1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">    });</p>
+</div>
+</div>
+<div  id="Flex_5AH2h3-gk" data-vp="" style="transform: translate3d(0px, 2115px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_cOlCu3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">95</p>
+<div  id="Flex_Lx8Bl-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_b1fIr-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">}</p>
+</div>
+</div>
+<div  id="Flex_xpgba3-gk" data-vp="" style="transform: translate3d(0px, 2137.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_cEtZa2-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">96</p>
+<div  id="Flex_wgaan1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_Xd7Py1-gk" data-vp="" style="transform: translate3d(0px, 2160px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_1y61d-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">97</p>
+<div  id="Flex_due7S3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_UZUlB-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">pub</p>
+<p  id="Text_ZeHeT1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_lrUk4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_quxoB-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_IjQTw-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">render</p>
+<p  id="Text_1JFrM4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">() void {</p>
+</div>
+</div>
+<div  id="Flex_Asipp1-gk" data-vp="" style="transform: translate3d(0px, 2182.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_KIegI3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">98</p>
+<div  id="Flex_GtJXz-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_ZTyHL-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">    Tooltip.</p>
+<p  id="Text_tEW3P1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">create</p>
+<p  id="Text_ThLsY2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.{ .background = .</p>
+<p  id="Text_o4QdM4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_YfcXj1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.background), .stroke_color = .</p>
+<p  id="Text_ZxJci-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">palette</p>
+<p  id="Text_kbBH3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(.border_color_light) })</p>
+</div>
+</div>
+<div  id="Flex_1cBkl3-gk" data-vp="" style="transform: translate3d(0px, 2205px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_CNexI4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">99</p>
+<div  id="Flex_nmBxF2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_FMGwJ3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_kyFJF4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Trigger</p>
+<p  id="Text_jViaP4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(TooltipTrigger, .{</p>
+<p  id="Text_APit43-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;Custom Tooltip with Custom Content&quot;</p>
+<p  id="Text_RaXQW-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">})</p>
+</div>
+</div>
+<div  id="Flex_y8w4f4-gk" data-vp="" style="transform: translate3d(0px, 2227.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_2zfw42-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">100</p>
+<div  id="Flex_dSBIO3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_dhoOQ-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_JozpS1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Component</p>
+<p  id="Text_V0USQ4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(TooltipContent, .{ </p>
+<p  id="Text_YdJO6-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;CUSTOM&quot;</p>
+<p  id="Text_jftpq2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, </p>
+<p  id="Text_P1cn33-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;Priority&quot;</p>
+<p  id="Text_eolNP4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">, Vapor.DateTime.</p>
+<p  id="Text_TMxhg3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">now</p>
+<p  id="Text_3Cmu9-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">() })</p>
+</div>
+</div>
+<div  id="Flex_5tjBo-gk" data-vp="" style="transform: translate3d(0px, 2250px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_Kyeud4-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">101</p>
+<div  id="Flex_XJmFP2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_CZwhh2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">        .</p>
+<p  id="Text_7Ervw-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">end</p>
+<p  id="Text_P6N6t-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">();</p>
+</div>
+</div>
+<div  id="Flex_vNKea3-gk" data-vp="" style="transform: translate3d(0px, 2272.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_O9Spm3-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">102</p>
+<div  id="Flex_0K7xJ1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_dudTg1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">}</p>
+</div>
+</div>
+<div  id="Flex_miJub-gk" data-vp="" style="transform: translate3d(0px, 2295px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_0kGBj-gk" data-vp="" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">103</p>
+<div  id="Flex_OEoca1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p  id="Text_paYgY1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_sT3Sn vis_7KE9Z1 ">API Reference</p>
+<p  id="Text_zDvhe-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Setup</p>
+<p  id="Text_cJcfb-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Render the tooltip layer once, in your layout; every tooltip shows there.</p>
+<div  id="Flex_Kuyew2-gk" data-vp="" class="lay_AEgkh1 pos_e8wtf3 mapa_WM2Wg4 vis_1pLk43 ">
+<p  id="Text_JgrAS-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_wiA1R1 ">Opaque.TooltipLayer();</p>
+</div>
+<p  id="Text_zEPKn2-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Tooltip.simple</p>
+<p  id="Text_qCy3N3-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">A text trigger with a text tooltip above it.</p>
+<div  id="Flex_49EwJ2-gk" data-vp="" class="lay_AEgkh1 pos_e8wtf3 mapa_WM2Wg4 vis_1pLk43 ">
+<p  id="Text_pUCrd4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_wiA1R1 ">Tooltip.simple(trigger_text, tooltip_text);
+Tooltip.simpleWithPosition(trigger_text, tooltip_text, .bottom);</p>
+</div>
+<p  id="Text_WY0Hh3-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Tooltip.create</p>
+<p  id="Text_lPTAd2-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Your own trigger, and optionally your own content.</p>
+<div  id="Flex_z2mja-gk" data-vp="" class="lay_AEgkh1 pos_e8wtf3 mapa_WM2Wg4 vis_1pLk43 ">
+<p  id="Text_TyGr94-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_wiA1R1 ">Tooltip.create(.{ .content = &quot;Text&quot;, .position = .top })
+    .Trigger(myTrigger, .{args})
+    .Component(myContent, .{args}) // optional
+    .end();</p>
+</div>
+<p  id="Text_2bJuf1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Behaviour</p>
+<p  id="Text_UgprR-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Shows after a short hover or on keyboard focus; hides on leave, blur or Escape. The popup has role=tooltip.</p>
+</div>
+</div>
+
+
+
+
+<div  id="opaque-toast-stack" data-vp="" class="lay_eGDG91 pos_AUI0J mapa_CrkEb2 vis_hyiu14 ">
+</div>
+<div  id="Flex_UC3x-gk" data-vp="" class="lay_Owo7D2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+</div>
+</main>
+</body>
+</html>
