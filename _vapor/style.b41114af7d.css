@@ -3163,7 +3163,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_OvkAc1{
 background-color:rgb(var(--background));
@@ -3195,7 +3195,7 @@ border-width:0px 0px 0px 0px;
 border-radius:4px;
 color:rgba(255,255,255,0.50);
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_edG4W{
 background-color:rgb(var(--background));
@@ -3205,7 +3205,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_17D2N1{
 fill:rgb(255,255,255);
@@ -3238,7 +3238,7 @@ border-radius:4px;
 border-style: solid;
 color:rgb(var(--text_color));
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_8pm6k3{
 background-color:rgba(var(--background), 0.50);
@@ -3247,7 +3247,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:0px;
 border-style: solid;
 text-decoration:none;
-transition:200ms ease;
+transition:color 200ms ease, background-color 200ms ease, border-color 200ms ease, outline-color 200ms ease, text-decoration-color 200ms ease, fill 200ms ease, stroke 200ms ease, opacity 200ms ease, box-shadow 200ms ease, transform 200ms ease, translate 200ms ease, scale 200ms ease, rotate 200ms ease, filter 200ms ease, backdrop-filter 200ms ease;
 }
 .vis_CaHzH1{
 font-size:16px;
@@ -3399,7 +3399,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_pF4k2{
 font-size:14px;
@@ -3494,7 +3494,7 @@ cursor:pointer;
 border-width:0px 0px 0px 0px;
 color:rgb(113,113,122);
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_ojBeh3{
 background-color:rgb(var(--background));
@@ -3518,7 +3518,7 @@ border-color:rgba(0,0,0,0.00);
 border-radius:4px;
 border-style: solid;
 text-decoration:none;
-transition:200ms ease;
+transition:color 200ms ease, background-color 200ms ease, border-color 200ms ease, outline-color 200ms ease, text-decoration-color 200ms ease, fill 200ms ease, stroke 200ms ease, opacity 200ms ease, box-shadow 200ms ease, transform 200ms ease, translate 200ms ease, scale 200ms ease, rotate 200ms ease, filter 200ms ease, backdrop-filter 200ms ease;
 }
 .vis_T9885{
 font-size:14px;
@@ -3589,7 +3589,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_lTdWS3{
 font-size:12px;
@@ -3701,7 +3701,7 @@ font-family:Inter, -apple-system, sans-serif;
 font-weight:400;
 color:rgb(var(--text_color));
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_l4GFl1{
 background-color:rgb(var(--background));
@@ -3735,7 +3735,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_UdZsd4{
 background-color:rgb(var(--text_color));
@@ -3763,7 +3763,7 @@ border-radius:99px;
 border-style: solid;
 color:rgb(255,255,255);
 box-shadow:0px 2px 4px 2px rgba(0,0,0,0.10);text-decoration:none;
-transition:150ms ease;
+transition:color 150ms ease, background-color 150ms ease, border-color 150ms ease, outline-color 150ms ease, text-decoration-color 150ms ease, fill 150ms ease, stroke 150ms ease, opacity 150ms ease, box-shadow 150ms ease, transform 150ms ease, translate 150ms ease, scale 150ms ease, rotate 150ms ease, filter 150ms ease, backdrop-filter 150ms ease;
 }
 .vis_JMgt6{
 background-color:rgb(30,0,255);
@@ -3772,7 +3772,7 @@ border-color:rgb(30,0,255);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_ryjJt2{
 background-color:rgb(var(--background));
@@ -3849,7 +3849,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:99px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_hUuWG{
 background-color:rgb(139,92,246);
@@ -3882,7 +3882,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_BrAlS{
 background-color:rgb(var(--background));
@@ -4019,7 +4019,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_mPXKK2{
 color:rgb(var(--text_color));
@@ -4066,7 +4066,7 @@ border-color:rgba(0,0,0,0.00);
 border-radius:6px;
 border-style: solid;
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_ODhND4{
 font-size:20px;
@@ -4083,7 +4083,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_M4P2M2{
 background-color:rgb(var(--background));
@@ -4194,7 +4194,7 @@ border-color:rgba(0,0,0,0.00);
 border-radius:20px;
 border-style: solid;
 box-shadow:4px 4px 4px rgba(0,0,0,0.10);text-decoration:none;
-transition:150ms ease;
+transition:color 150ms ease, background-color 150ms ease, border-color 150ms ease, outline-color 150ms ease, text-decoration-color 150ms ease, fill 150ms ease, stroke 150ms ease, opacity 150ms ease, box-shadow 150ms ease, transform 150ms ease, translate 150ms ease, scale 150ms ease, rotate 150ms ease, filter 150ms ease, backdrop-filter 150ms ease;
 }
 .vis_qRvRK{
 font-size:12px;
@@ -4254,7 +4254,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_5Wb783{
 font-size:72px;
@@ -4302,7 +4302,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_DV4xb3{
 background-color:rgb(var(--background));
@@ -4324,7 +4324,7 @@ border-radius:99px;
 border-style: solid;
 color:rgb(var(--text));
 box-shadow:0px 2px 4px 2px rgba(0,0,0,0.10);text-decoration:none;
-transition:150ms ease;
+transition:color 150ms ease, background-color 150ms ease, border-color 150ms ease, outline-color 150ms ease, text-decoration-color 150ms ease, fill 150ms ease, stroke 150ms ease, opacity 150ms ease, box-shadow 150ms ease, transform 150ms ease, translate 150ms ease, scale 150ms ease, rotate 150ms ease, filter 150ms ease, backdrop-filter 150ms ease;
 }
 .vis_75Cjr3{
 font-size:18px;
@@ -4352,7 +4352,7 @@ cursor:pointer;
 border-width:0px 0px 0px 0px;
 color:rgb(var(--disabled));
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_xtbKG3{
 background-color:rgb(var(--background));
@@ -4385,12 +4385,12 @@ font-family:Inter, -apple-system, sans-serif;
 font-weight:400;
 color:rgb(255,85,0);
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Jnr9B1{
 color:rgb(var(--text_color));
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_G2ZyN{
 background-image:repeating-linear-gradient(45deg, rgb(var(--grid_color)) 0px, rgb(var(--grid_color)) 1px, transparent 1px, transparent 4px);
@@ -4418,7 +4418,7 @@ border-color:rgb(var(--tint));
 border-radius:8px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_ojRvB1{
 background-color:rgb(var(--background));
@@ -4428,7 +4428,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_CKlGN3{
 font-size:12px;
@@ -4455,7 +4455,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.30),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_v5CyE1{
 background-color:rgb(255,255,255);
@@ -4468,7 +4468,7 @@ border-radius:4px;
 border-style: solid;
 color:rgb(0,0,0);
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Bby8k1{
 background-color:rgb(var(--background));
@@ -4503,7 +4503,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_ghy1s1{
 background-color:rgb(var(--background));
@@ -4521,7 +4521,7 @@ border-color:rgb(220,0,0);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_fJVsL2{
 font-size:14px;
@@ -4537,7 +4537,7 @@ border-color:rgb(var(--tint));
 border-radius:8px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_5jLy03{
 font-size:10px;
@@ -4636,7 +4636,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_QrIf53{
 font-size:14px;
@@ -4699,7 +4699,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:99px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_TqFcJ{
 font-size:14px;
@@ -4747,7 +4747,7 @@ border-color:rgba(0,0,0,0.00);
 border-radius:20px;
 border-style: solid;
 text-decoration:none;
-transition:150ms ease;
+transition:color 150ms ease, background-color 150ms ease, border-color 150ms ease, outline-color 150ms ease, text-decoration-color 150ms ease, fill 150ms ease, stroke 150ms ease, opacity 150ms ease, box-shadow 150ms ease, transform 150ms ease, translate 150ms ease, scale 150ms ease, rotate 150ms ease, filter 150ms ease, backdrop-filter 150ms ease;
 }
 .vis_rnEhx1{
 font-size:14px;
@@ -4860,7 +4860,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_JR91T{
 background-color:rgba(245,245,245,0.20);
@@ -4869,7 +4869,7 @@ border-color:rgb(var(--text_color));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_boKMu{
 font-size:13px;
@@ -4887,7 +4887,7 @@ border-width:0px 0px 0px 0px;
 border-radius:4px;
 border-style: solid;
 box-shadow:0px 2px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:transform 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19), background_color 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+transition:transform 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .vis_VK5ZW3{
 background-color:rgb(var(--background));
@@ -4984,7 +4984,7 @@ border-color:rgb(var(--text_color));
 border-radius:8px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_sWsOA3{
 font-size:12px;
@@ -5047,7 +5047,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Cjc0e4{
 background-color:rgb(var(--background));
@@ -5065,7 +5065,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_94mN64{
 background-color:rgb(var(--background));
@@ -5133,7 +5133,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_8NcUR{
 background-color:rgb(var(--background));
@@ -5173,7 +5173,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_8JP3C4{
 background-color:rgba(var(--tint), 0.70);
@@ -5182,7 +5182,7 @@ border-color:rgb(var(--tint));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_yG7Ei3{
 font-size:16px;
@@ -5263,7 +5263,7 @@ border-color:rgba(0,0,0,0.00);
 border-radius:12px;
 border-style: solid;
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_h3FN12{
 background-color:rgb(var(--background));
@@ -5279,7 +5279,7 @@ cursor:pointer;
 border-width:0px 0px 0px 0px;
 border-radius:4px;
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_BOMbg4{
 background-color:rgb(var(--background));
@@ -5336,7 +5336,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_5rMkb3{
 text-decoration:none;
@@ -5350,7 +5350,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_BjuUN3{
 background-color:rgb(var(--background));
@@ -5392,7 +5392,7 @@ border-color:rgba(0,0,0,0.20);
 border-radius:6px;
 border-style: solid;
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_QRw861{
 background-color:rgba(0,0,0,0.00);
@@ -5428,7 +5428,7 @@ border-color:rgb(var(--tint));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_cG7t21{
 background-color:rgb(var(--background));
@@ -5453,7 +5453,7 @@ text-decoration:none;
 fill:rgb(0,0,0);
 stroke:rgb(0,0,0);
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_foGqG2{
 background-color:rgb(var(--background));
@@ -5476,7 +5476,7 @@ border-color:rgb(0,255,144);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_X2tg31{
 font-size:72px;
@@ -5499,7 +5499,7 @@ border-color:rgb(30,0,255);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Tw4qX2{
 font-size:16px;
@@ -5603,7 +5603,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_jtD7M1{
 border-width:0px 1px 0px 0px;
@@ -5636,7 +5636,7 @@ cursor:pointer;
 border-width:0px 0px 0px 0px;
 border-radius:4px;
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_BRr4m3{
 background-color:rgb(var(--background));
@@ -5646,7 +5646,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_9cPvu3{
 background-color:rgb(20,184,166);
@@ -5682,7 +5682,7 @@ border-color:rgb(var(--tint));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Wr4t11{
 background-color:rgb(var(--background));
@@ -5734,7 +5734,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Z8Gcb1{
 background-color:rgb(var(--background));
@@ -5782,7 +5782,7 @@ border-radius:4px;
 border-style: solid;
 color:rgb(var(--text_color));
 text-decoration:none;
-transition:200ms ease;
+transition:color 200ms ease, background-color 200ms ease, border-color 200ms ease, outline-color 200ms ease, text-decoration-color 200ms ease, fill 200ms ease, stroke 200ms ease, opacity 200ms ease, box-shadow 200ms ease, transform 200ms ease, translate 200ms ease, scale 200ms ease, rotate 200ms ease, filter 200ms ease, backdrop-filter 200ms ease;
 }
 .vis_cseEV1{
 background-color:rgb(var(--background));
@@ -5800,7 +5800,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_V9aC53{
 background-color:rgb(var(--background));
@@ -5872,7 +5872,7 @@ border-color:rgb(var(--text_color));
 border-radius:8px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_WgBlz2{
 text-decoration:none;
@@ -5884,7 +5884,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:0px 0px 0px rgba(0,0,0,0.00);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_kZMif{
 background-color:rgb(var(--background));
@@ -5894,7 +5894,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Gj9Bc{
 background-color:rgb(var(--background));
@@ -5924,7 +5924,7 @@ font-family:Inter, -apple-system, sans-serif;
 font-weight:400;
 color:rgb(var(--text_secondary));
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_P1NHc4{
 font-size:14px;
@@ -5952,7 +5952,7 @@ background-color:rgb(var(--tint));
 cursor:pointer;
 border-width:0px 0px 0px 0px;
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_pJZnC1{
 background-color:rgb(var(--background));
@@ -5962,7 +5962,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_FGyyl1{
 background-color:rgba(245,245,245,0.20);
@@ -5971,7 +5971,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_02aNZ1{
 font-size:15px;
@@ -5991,7 +5991,7 @@ border-color:rgb(var(--tint));
 border-radius:8px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_eOAGh1{
 font-size:14px;
@@ -6120,7 +6120,7 @@ border-width:0px 0px 0px 0px;
 border-radius:4px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:transform 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19), background_color 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+transition:transform 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .vis_OwC3k{
 background-color:rgb(var(--tint));
@@ -6152,7 +6152,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_1fPV11{
 border-width:0px 0px 1px 0px;
@@ -6214,7 +6214,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_8SizG3{
 background-color:rgb(var(--background));
@@ -6225,7 +6225,7 @@ border-radius:20px;
 border-style: solid;
 text-decoration:none;
 opacity:1.00;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_p8lZc4{
 background-color:rgb(255,128,0);
@@ -6234,7 +6234,7 @@ border-color:rgb(255,128,0);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_FH15G4{
 font-size:12px;
@@ -6250,7 +6250,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:4px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_uAPfs2{
 background-color:rgb(var(--background));
@@ -6303,7 +6303,7 @@ border-width:0px 0px 0px 0px;
 border-radius:4px;
 border-style: solid;
 box-shadow:0px 2px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:transform 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19), background_color 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+transition:transform 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .vis_LCuQ32{
 background-color:rgb(var(--background));
@@ -6313,7 +6313,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_AmcdT1{
 background-color:rgb(var(--background));
@@ -6359,7 +6359,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_uQZ2C4{
 font-size:14px;
@@ -6400,7 +6400,7 @@ border-color:rgb(var(--tint));
 border-radius:0px;
 border-style: solid;
 text-decoration:none;
-transition:200ms ease;
+transition:color 200ms ease, background-color 200ms ease, border-color 200ms ease, outline-color 200ms ease, text-decoration-color 200ms ease, fill 200ms ease, stroke 200ms ease, opacity 200ms ease, box-shadow 200ms ease, transform 200ms ease, translate 200ms ease, scale 200ms ease, rotate 200ms ease, filter 200ms ease, backdrop-filter 200ms ease;
 }
 .vis_OnAaI3{
 background-color:rgb(var(--background));
@@ -6467,7 +6467,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_DFRR73{
 background-color:rgba(0,0,0,0.00);
@@ -6476,7 +6476,7 @@ border-width:0px 1px 0px 0px;
 border-color:rgba(0,0,0,0.00);
 border-style: solid;
 text-decoration:none;
-transition:150ms ease;
+transition:color 150ms ease, background-color 150ms ease, border-color 150ms ease, outline-color 150ms ease, text-decoration-color 150ms ease, fill 150ms ease, stroke 150ms ease, opacity 150ms ease, box-shadow 150ms ease, transform 150ms ease, translate 150ms ease, scale 150ms ease, rotate 150ms ease, filter 150ms ease, backdrop-filter 150ms ease;
 }
 .vis_CFx6Y1{
 font-size:14px;
@@ -6491,7 +6491,7 @@ font-family:Inter, -apple-system, sans-serif;
 font-weight:400;
 color:rgb(var(--text_color));
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_PCdak1{
 font-size:13px;
@@ -6578,7 +6578,7 @@ border-color:rgb(var(--tint));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_KysgS3{
 background-color:rgb(var(--text_color));
@@ -6594,7 +6594,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:99px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_cMF4T1{
 font-size:14px;
@@ -6616,7 +6616,7 @@ border-color:rgb(var(--text_color));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_9RVfx2{
 font-size:15px;
@@ -6637,7 +6637,7 @@ border-color:rgb(220,0,0);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_ANg9U2{
 background-color:rgb(var(--background));
@@ -6720,7 +6720,7 @@ border-color:rgb(var(--tint));
 border-radius:8px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_m5hh3{
 font-size:14px;
@@ -6737,7 +6737,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:99px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_4GZg83{
 background-color:rgb(var(--background));
@@ -6772,7 +6772,7 @@ border-color:rgb(255,128,0);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_nE2d34{
 font-size:14px;
@@ -6789,7 +6789,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_brjgC1{
 background-color:rgba(245,245,245,0.20);
@@ -6798,7 +6798,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_nC21k2{
 background-color:rgb(var(--border_color_light));
@@ -6807,7 +6807,7 @@ border-width:0px 0px 0px 0px;
 border-radius:4px;
 border-style: solid;
 text-decoration:none;
-transition:background_color 100ms ease-in-out;
+transition:background-color 100ms ease-in-out;
 }
 .vis_0jgc51{
 background-color:rgb(var(--background));
@@ -6828,7 +6828,7 @@ border-radius:4px;
 border-style: solid;
 color:rgb(255,255,255);
 box-shadow:inset 0px -2px 0px rgba(var(--alternate_background), 0.50),0px 1px 3px rgba(var(--alternate_background), 0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_ljNHF4{
 list-style:none;
@@ -6859,7 +6859,7 @@ border-color:rgb(0,255,144);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_8yZrN4{
 background-color:rgb(var(--background));
@@ -6869,7 +6869,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_CrRX84{
 font-size:18px;
@@ -6918,7 +6918,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_4uHc52{
 background-color:rgb(var(--background));
@@ -6976,7 +6976,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Qyv844{
 background-color:rgb(var(--tint));
@@ -6985,12 +6985,12 @@ border-color:rgb(var(--tint));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_sZWnv{
 cursor:pointer;
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_BgnlZ2{
 background-color:rgb(var(--background));
@@ -7011,7 +7011,7 @@ border-width:0px 1px 0px 0px;
 border-color:rgb(var(--tint));
 border-style: solid;
 text-decoration:none;
-transition:150ms ease;
+transition:color 150ms ease, background-color 150ms ease, border-color 150ms ease, outline-color 150ms ease, text-decoration-color 150ms ease, fill 150ms ease, stroke 150ms ease, opacity 150ms ease, box-shadow 150ms ease, transform 150ms ease, translate 150ms ease, scale 150ms ease, rotate 150ms ease, filter 150ms ease, backdrop-filter 150ms ease;
 }
 .vis_qnXoK2{
 background-color:rgb(245,158,11);
@@ -7033,7 +7033,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_tOqMD2{
 border-width:0px 0px 0px 0px;
@@ -7087,7 +7087,7 @@ border-radius:99px;
 border-style: solid;
 color:rgb(var(--text));
 box-shadow:0px 2px 4px 2px rgba(0,0,0,0.10);text-decoration:none;
-transition:150ms ease;
+transition:color 150ms ease, background-color 150ms ease, border-color 150ms ease, outline-color 150ms ease, text-decoration-color 150ms ease, fill 150ms ease, stroke 150ms ease, opacity 150ms ease, box-shadow 150ms ease, transform 150ms ease, translate 150ms ease, scale 150ms ease, rotate 150ms ease, filter 150ms ease, backdrop-filter 150ms ease;
 }
 .vis_lx0NJ1{
 background-color:rgb(var(--tint));
@@ -7096,7 +7096,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_7g2Jg3{
 font-size:10px;
@@ -7133,7 +7133,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Z5jG91{
 background-color:rgb(0,255,144);
@@ -7142,7 +7142,7 @@ border-color:rgb(0,255,144);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_H5EKV{
 background-color:rgb(var(--border_color_light));
@@ -7166,7 +7166,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Rt94J1{
 border-width:1px 1px 1px 1px;
@@ -7192,7 +7192,7 @@ border-color:rgb(30,0,255);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_ZJH211{
 background-color:rgb(var(--background));
@@ -7217,7 +7217,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_8WVL53{
 background-color:rgb(var(--tint));
@@ -7226,7 +7226,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_i6laY2{
 background-color:rgba(var(--tint), 0.70);
@@ -7235,7 +7235,7 @@ border-color:rgb(var(--tint));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_e44LG4{
 background-color:rgb(var(--background));
@@ -7252,7 +7252,7 @@ font-family:Inter, -apple-system, sans-serif;
 font-weight:400;
 color:rgb(var(--text_muted));
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_Tg4bv3{
 background-color:rgb(var(--background));
@@ -7262,7 +7262,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_5jUEl2{
 font-size:14px;
@@ -7303,7 +7303,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:8px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_WCCNj1{
 cursor:pointer;
@@ -7320,7 +7320,7 @@ border-color:rgb(255,128,0);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_k6jjm2{
 background-color:rgb(var(--background));
@@ -7351,7 +7351,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_nx0454{
 font-size:16px;
@@ -7367,7 +7367,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:8px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_lbSnt1{
 background-color:rgb(var(--background));
@@ -7377,7 +7377,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_iFX8k{
 background-color:rgb(var(--background));
@@ -7387,7 +7387,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_mv4Mz{
 font-size:36px;
@@ -7416,7 +7416,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_IPGd33{
 background-color:rgb(var(--background));
@@ -7435,7 +7435,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_NhlxD1{
 cursor:grab;
@@ -7451,7 +7451,7 @@ border-width:0px 0px 0px 0px;
 border-radius:4px;
 border-style: solid;
 box-shadow:0px 2px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:transform 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19), background_color 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+transition:transform 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .vis_vbL2o3{
 font-size:10px;
@@ -7473,7 +7473,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_mI8NP2{
 background-color:rgba(245,245,245,0.20);
@@ -7482,7 +7482,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:99px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_gSqov3{
 background-color:rgb(var(--background));
@@ -7544,7 +7544,7 @@ border-color:rgb(220,0,0);
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_jkyaT3{
 background-color:rgb(var(--tint));
@@ -7553,7 +7553,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_0lkhh3{
 background-color:rgb(var(--background));
@@ -7572,7 +7572,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_2xZST2{
 background-color:rgb(var(--background));
@@ -7590,7 +7590,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_okpNH3{
 background-color:rgb(var(--background));
@@ -7656,7 +7656,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_RoyB64{
 background-color:rgb(var(--background));
@@ -7699,7 +7699,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:6px;
 border-style: solid;
 text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_kj6us2{
 font-size:16px;
@@ -7767,7 +7767,7 @@ border-color:rgb(var(--border_color_light));
 border-radius:12px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_lWme13{
 font-size:14px;
@@ -7786,7 +7786,7 @@ background-color:rgb(var(--background));
 cursor:pointer;
 border-width:0px 0px 0px 0px;
 text-decoration:none;
-transition:200ms ease;
+transition:color 200ms ease, background-color 200ms ease, border-color 200ms ease, outline-color 200ms ease, text-decoration-color 200ms ease, fill 200ms ease, stroke 200ms ease, opacity 200ms ease, box-shadow 200ms ease, transform 200ms ease, translate 200ms ease, scale 200ms ease, rotate 200ms ease, filter 200ms ease, backdrop-filter 200ms ease;
 }
 .vis_3E7SH3{
 cursor:pointer;
@@ -7854,7 +7854,7 @@ border-color:rgb(var(--tint));
 border-radius:8px;
 border-style: solid;
 box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:100ms ease;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, outline-color 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_AGI4h3{
 font-size:15px;
