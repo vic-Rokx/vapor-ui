@@ -3226,10 +3226,10 @@ color:rgb(255,255,255);
 text-decoration:none;
 white-space:nowrap;
 }
-.vis_nRqVb3{
-border-width:0px 0px 2px 0px;
-border-color:rgb(var(--text_color));
-border-style: solid;
+.vis_hAPni{
+font-size:48px;
+font-weight:700;
+color:rgb(255,255,255);
 text-decoration:none;
 }
 .vis_sI3X71{
@@ -3326,9 +3326,10 @@ font-weight:500;
 color:rgb(var(--tint));
 text-decoration:none;
 }
-.vis_xBNS63{
-font-size:18px;
-font-family:Montserrat;
+.vis_nRqVb3{
+border-width:0px 0px 2px 0px;
+border-color:rgb(var(--text_color));
+border-style: solid;
 text-decoration:none;
 }
 .vis_xVOcf{
@@ -3382,6 +3383,11 @@ border-radius:4px;
 border-style: solid;
 text-decoration:none;
 }
+.vis_xBNS63{
+font-size:18px;
+font-family:Montserrat;
+text-decoration:none;
+}
 .vis_eCdRC1{
 background-color:rgb(var(--background));
 border-width:1px 1px 1px 1px;
@@ -3390,17 +3396,17 @@ border-radius:12px;
 border-style: solid;
 box-shadow:0px 0px 3px 1px rgba(0,0,0,0.00);text-decoration:none;
 }
+.vis_UVol13{
+font-size:14px;
+font-weight:700;
+text-decoration:none;
+}
 .vis_ksnka4{
 background-color:rgb(var(--background));
 font-family:IBM Plex Mono,monospace;
 border-width:1px 1px 1px 1px;
 border-color:rgb(var(--border_color_light));
 border-style: solid;
-text-decoration:none;
-}
-.vis_UVol13{
-font-size:14px;
-font-weight:700;
 text-decoration:none;
 }
 .vis_pqfEp2{
@@ -3483,14 +3489,11 @@ border-radius:0px;
 border-style: solid;
 text-decoration:none;
 }
-.vis_SJdWI3{
-background-color:rgb(30,0,255);
-border-width:1px 1px 1px 1px;
-border-color:rgb(30,0,255);
-border-radius:12px;
-border-style: solid;
-box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
-transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, border-radius 100ms ease, outline-color 100ms ease, outline-width 100ms ease, outline-offset 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
+.vis_VeNd01{
+font-size:24px;
+font-weight:700;
+color:rgb(255,255,255);
+text-decoration:none;
 }
 .vis_ojBeh3{
 background-color:rgb(var(--background));
@@ -3506,14 +3509,13 @@ font-size:14px;
 font-weight:400;
 text-decoration:none;
 }
-.vis_7Igtq2{
-background-color:rgb(var(--background));
-cursor:pointer;
+.vis_SJdWI3{
+background-color:rgb(30,0,255);
 border-width:1px 1px 1px 1px;
-border-color:rgb(var(--border_color_light));
+border-color:rgb(30,0,255);
 border-radius:12px;
 border-style: solid;
-box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
+box-shadow:inset 0px -2px 0px rgba(0,0,0,0.20),0px 1px 3px rgba(0,0,0,0.10);text-decoration:none;
 transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, border-radius 100ms ease, outline-color 100ms ease, outline-width 100ms ease, outline-offset 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_T9885{
@@ -3535,6 +3537,16 @@ border-color:rgba(0,0,0,0.00);
 border-radius:6px;
 border-style: solid;
 box-shadow:0px 0px 2px 1px rgba(0,0,0,0.00);text-decoration:none;
+}
+.vis_7Igtq2{
+background-color:rgb(var(--background));
+cursor:pointer;
+border-width:1px 1px 1px 1px;
+border-color:rgb(var(--border_color_light));
+border-radius:12px;
+border-style: solid;
+box-shadow:2px 0px 2px 1px rgba(0,0,0,0.10);text-decoration:none;
+transition:color 100ms ease, background-color 100ms ease, border-color 100ms ease, border-radius 100ms ease, outline-color 100ms ease, outline-width 100ms ease, outline-offset 100ms ease, text-decoration-color 100ms ease, fill 100ms ease, stroke 100ms ease, opacity 100ms ease, box-shadow 100ms ease, transform 100ms ease, translate 100ms ease, scale 100ms ease, rotate 100ms ease, filter 100ms ease, backdrop-filter 100ms ease;
 }
 .vis_4jRjc2{
 font-size:14px;
@@ -3708,6 +3720,12 @@ border-color:rgba(0,0,0,0.00);
 border-radius:6px;
 border-style: solid;
 box-shadow:0px 0px 2px 1px rgba(0,0,0,0.00);text-decoration:none;
+}
+.vis_cCeuS2{
+font-size:16px;
+font-weight:700;
+color:rgb(255,255,255);
+text-decoration:none;
 }
 .vis_V6NH83{
 border-width:0px 0px 2px 0px;
@@ -4924,6 +4942,13 @@ text-decoration:none;
 .vis_zfynC2{
 font-size:16px;
 font-weight:600;
+color:rgb(255,255,255);
+text-decoration:none;
+}
+.vis_GRDv42{
+font-size:16px;
+font-family:IBM Plex Sans,monospace;
+font-weight:300;
 color:rgb(255,255,255);
 text-decoration:none;
 }
