@@ -1446,13 +1446,14 @@ flex-shrink: 0;
 height:100.00%;
 flex-shrink: 0;
 }
-.lay_yJRXT{
+.lay_XgGXA1{
 display:flex;
-flex-direction:column;
-gap:64px;
-height:720.00px;
+flex-direction:row;
+width:100.00%;
 flex-shrink: 0;
-flex-wrap:wrap;
+height:400.00px;
+flex-shrink: 0;
+overflow-y:scroll;
 }
 .lay_0qDTS{
 display:flex;
@@ -1470,6 +1471,14 @@ flex-direction:row;
 gap:24px;
 width:100.00%;
 flex-shrink: 0;
+}
+.lay_yJRXT{
+display:flex;
+flex-direction:column;
+gap:64px;
+height:720.00px;
+flex-shrink: 0;
+flex-wrap:wrap;
 }
 .lay_xhnuO1{
 display:flex;
@@ -9061,10 +9070,6 @@ to { left: -384.00px; }
 from { right: 0.00px; }
 to { right: -384.00px; }
 }
-@keyframes opaque-toast-exit {
-from { transform: scale(1.00); opacity: 1.00; }
-to { transform: scale(0.95); opacity: 0.00; }
-}
 @keyframes spin {
 from { transform: rotate(0.00deg); }
 to { transform: rotate(180.00deg); }
@@ -9073,21 +9078,21 @@ to { transform: rotate(180.00deg); }
 from { bottom: -384.00px; }
 to { bottom: 0.00px; }
 }
-@keyframes opaque-tooltip-exit {
-from { transform: scaleY(1.00); opacity: 1.00; }
-to { transform: scaleY(0.90); opacity: 0.00; }
-}
 @keyframes slide-right {
 from { transform: translateX(100.00px); opacity: 0.00; }
 to { transform: translateX(0.00px); opacity: 1.00; }
 }
-@keyframes fade-in {
-from { transform: translateY(8.00px); opacity: 0.00; }
-to { transform: translateY(0.00px); opacity: 1.00; }
+@keyframes opaque-tooltip-exit {
+from { transform: scaleY(1.00); opacity: 1.00; }
+to { transform: scaleY(0.90); opacity: 0.00; }
 }
 @keyframes sidebar-slide-up {
 from { transform: scaleY(1.00); opacity: 1.00; }
 to { transform: scaleY(0.00); opacity: 0.00; }
+}
+@keyframes fade-in {
+from { transform: translateY(8.00px); opacity: 0.00; }
+to { transform: translateY(0.00px); opacity: 1.00; }
 }
 @keyframes opaque-combobox-enter {
 from { transform: scale(0.90); opacity: 0.00; }
@@ -9097,17 +9102,21 @@ to { transform: scale(1.00); opacity: 1.00; }
 from { transform: scaleY(1.00); opacity: 1.00; }
 to { transform: scaleY(0.90); opacity: 0.00; }
 }
+@keyframes opaque-toast-enter-left {
+from { transform: translateX(-120.00%); }
+to { transform: translateX(0.00%); }
+}
 @keyframes opaque-table-filter-enter {
 from { transform: scale(0.90); opacity: 0.00; }
 to { transform: scale(1.00); opacity: 1.00; }
 }
-@keyframes opaque-table-textarea-exit {
-from { transform: scaleY(1.00); opacity: 1.00; }
-to { transform: scaleY(0.50); opacity: 0.00; }
-}
 @keyframes opaque-table-filter-exit {
 from { transform: scaleY(1.00); opacity: 1.00; }
 to { transform: scaleY(0.90); opacity: 0.00; }
+}
+@keyframes opaque-table-textarea-exit {
+from { transform: scaleY(1.00); opacity: 1.00; }
+to { transform: scaleY(0.50); opacity: 0.00; }
 }
 @keyframes blink {
 50.00% {
@@ -9194,6 +9203,10 @@ opacity:1;
 filter: blur(5px);
 background-color:rgb(255,255,0);
 }
+}
+@keyframes opaque-toast-enter-right {
+from { transform: translateX(120.00%); }
+to { transform: translateX(0.00%); }
 }
 @keyframes opaque-select-enter {
 from { transform: scale(0.90); opacity: 0.00; }
@@ -9288,17 +9301,21 @@ to { opacity: 0.50; }
 from { transform: scale(0.95); opacity: 0.00; }
 to { transform: scale(1.00); opacity: 1.00; }
 }
+@keyframes opaque-toast-exit-right {
+from { transform: translateX(0.00%); }
+to { transform: translateX(120.00%); }
+}
 @keyframes opaque-sheet-enter-top {
 from { top: -384.00px; }
 to { top: 0.00px; }
 }
-@keyframes kanban-fade-scale {
-from { transform: scale(0.95); opacity: 0.00; }
-to { transform: scale(1.00); opacity: 1.00; }
-}
 @keyframes kanban-slide-up {
 from { transform: translateY(20.00px); opacity: 0.00; }
 to { transform: translateY(0.00px); opacity: 1.00; }
+}
+@keyframes kanban-fade-scale {
+from { transform: scale(0.95); opacity: 0.00; }
+to { transform: scale(1.00); opacity: 1.00; }
 }
 @keyframes opaque-sheet-enter-left {
 from { left: -384.00px; }
@@ -9332,9 +9349,9 @@ to { opacity: 1.00; }
 from { transform: scaleY(0.50); opacity: 0.00; }
 to { transform: scaleY(1.00); opacity: 1.00; }
 }
-@keyframes opaque-toast-enter {
-from { transform: translateY(-20.00px); opacity: 0.00; }
-to { transform: translateY(0.00px); opacity: 1.00; }
+@keyframes opaque-toast-exit-left {
+from { transform: translateX(0.00%); }
+to { transform: translateX(-120.00%); }
 }
 @keyframes opaque-sheet-exit-top {
 from { top: 0.00px; }
@@ -9343,8 +9360,4 @@ to { top: -384.00px; }
 @keyframes opaque-dialog-enter {
 from { transform: scale(0.90); opacity: 0.00; }
 to { transform: scale(1.00); opacity: 1.00; }
-}
-@keyframes opaque-toast-enter-bottom {
-from { transform: translateY(20.00px); opacity: 0.00; }
-to { transform: translateY(0.00px); opacity: 1.00; }
 }
