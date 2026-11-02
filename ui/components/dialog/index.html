@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-vapor-wasm="/_vapor/vapor.726c2a6e5b.wasm" data-vapor-browser="/_vapor/browser.4c4c45d709.js" lang="en">
+<html data-vapor-wasm="/_vapor/vapor.fd306f9795.wasm" data-vapor-browser="/_vapor/browser.4c4c45d709.js" lang="en">
 
 <head>
   <title>Vapor UI</title>
@@ -8,7 +8,7 @@
   <meta name="description" content="Senet Application" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
-  <link rel="preload" href="/_vapor/vapor.726c2a6e5b.wasm" as="fetch" type="application/wasm" crossorigin />
+  <link rel="preload" href="/_vapor/vapor.fd306f9795.wasm" as="fetch" type="application/wasm" crossorigin />
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -155,7 +155,7 @@
       transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
   </style>
-  <link rel="stylesheet" href="/_vapor/style.34d35f53d7.css" />
+  <link rel="stylesheet" href="/_vapor/style.2958c6054a.css" />
   <link rel="stylesheet" href="/_vapor/style_variables.e1e6d128b1.css" /></head>
 
 <body>
@@ -395,9 +395,9 @@
 <p  id="Text_FtSq24-gk" data-vp="" class="resp_WtbWm1 lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_X2tg31 ">dialog-ui</p>
 <p  id="Text_HfcTN3-gk" data-vp="" class="resp_R7xCh3 lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_o0WnN ">Highly customizable, accessible command-palette style dialogs for search and selection.</p>
 </div>
-<div  id="Flex_4B6Ak-gk" data-vp="" class="resp_SHAT42 lay_04E7E4 pos_e8wtf3 mapa_jHAIQ vis_PMQ7Z1 ">
+<div  id="Flex_4B6Ak-gk" data-vp="" class="resp_SHAT42 lay_FxFX93 pos_e8wtf3 mapa_jHAIQ vis_PMQ7Z1 ">
 <p  id="Text_m4zVW4-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Basic Dialog</p>
-<p  id="Text_tsVky-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">A searchable dialog using default list item rendering.</p>
+<p  id="Text_tsVky-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">A searchable list of items, drawn the standard way.</p>
 <div  id="Flex_GsUKA2-gk" data-vp="" class="lay_agOyD4 pos_e8wtf3 mapa_3RP2h2 vis_pe16U2 ">
 <button  id="CtxB_knyWB-gk" data-vp="" class="lay_nTFoO1 pos_e8wtf3 mapa_GjRnP2 vis_gBleN intr_YdpiI4 "aria-label="open basic dialog">
 <p  id="Text_gCmhb4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_kHmoA3 ">open basic dialog</p>
@@ -804,7 +804,7 @@
 </div>
 </div>
 <p  id="Text_rGnu62-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Custom Rendering</p>
-<p  id="Text_jGGhx3-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Overriding the row component to create complex, multi-line result items.</p>
+<p  id="Text_jGGhx3-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Your own row_component, here with an icon and a second line per item.</p>
 <div  id="Flex_5f1TF3-gk" data-vp="" class="lay_agOyD4 pos_e8wtf3 mapa_3RP2h2 vis_pe16U2 ">
 <button  id="CtxB_s4NaJ3-gk" data-vp="" class="lay_nTFoO1 pos_e8wtf3 mapa_GjRnP2 vis_X3np62 intr_oOxSn "aria-label="open custom dialog">
 <p  id="Text_SoQwf2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_kHmoA3 ">open custom dialog</p>
@@ -1831,27 +1831,340 @@
 </div>
 </div>
 <p  id="Text_P0nOF2-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_sT3Sn vis_7KE9Z1 ">API Reference</p>
-<p  id="Text_65V8d1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Generic Item Structure</p>
-<p  id="Text_1vG7c3-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Item(T) is a global type used across the framework for data consistency.</p>
-<div  id="Flex_h0pPo3-gk" data-vp="" class="lay_deeV02 pos_e8wtf3 mapa_WM2Wg4 vis_1pLk43 ">
-<p  id="Text_3cdx84-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_sI3X71 ">Item(T) {
-  value: T,
-  label: []const u8,
-  icon: ?IconTokens,
-  description: ?[]const u8,
-  link: ?[]const u8,
-  is_selected: bool,
-}</p>
+<p  id="Text_65V8d1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">ComboBoxDialog</p>
+<p  id="Text_1vG7c3-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Make one in your init from your items, and render it where its button is.</p>
+<div  id="Flex_h0pPo3-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_rPfvm1 vis_UwCOT2 ">
+<div  id="Flex_KpZ0K4-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_cLPMR vis_HkXHJ2 ">
+<div  id="Flex_v7VPZ-gk" data-vp="" class="resp_vxX982 lay_AEgkh1 pos_e8wtf3 mapa_jigL04 vis_PMQ7Z1 ">
+<div  id="Flex_Vnimj3-gk" data-vp="" class="lay_u32Lx1 pos_e8wtf3 mapa_rPfvm1 vis_XslkZ1 ">
+<p  id="Text_ULnx53-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_m5hh3 ">ComboBoxDialog</p>
 </div>
-<p  id="Text_ReSeD-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Custom Row Callback</p>
-<p  id="Text_9h2UX3-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Provide a custom function to render rows. Receives the dialog and the item pointer.</p>
-<div  id="Flex_bnmPk-gk" data-vp="" class="lay_deeV02 pos_e8wtf3 mapa_WM2Wg4 vis_1pLk43 ">
-<p  id="Text_HyYro1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_sI3X71 ">dialog.row_component = myCustomRowFn;</p>
 </div>
-<p  id="Text_mxpm1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Static Methods</p>
-<p  id="Text_e4lDf-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Use .open to trigger the dialog from any Button or Click event.</p>
-<div  id="Flex_O7zy31-gk" data-vp="" class="lay_deeV02 pos_e8wtf3 mapa_WM2Wg4 vis_1pLk43 ">
-<p  id="Text_J8hyL3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_sI3X71 ">Button(ComboBoxDialog(T).open, .{&amp;my_dialog})</p>
+<div  id="Flex_cnzod-gk" data-vp="" class="lay_GmMJB3 pos_e8wtf3 mapa_CrkEb2 vis_4dMax2 ">
+<div  id="Flex_38cjT4-gk" data-vp="" class="lay_x4rOR3 pos_t0s233 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_ka4Dx-gk" data-vp="" class="lay_RE1WF pos_xZOnm mapa_i7ad82 vis_PMQ7Z1 ">
+<div  id="Flex_DjrVX3-gk" data-vp="" class="lay_VjhrA2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<button  id="CtxB_9UhaW-gk" data-vp="" class="lay_jXzf62 pos_t0s233 mapa_CrkEb2 vis_APRbl1 intr_yhwcM2 "aria-label="Copy code">
+<i  id="Icon_vX6oH1-gk" data-vp="" class="bi bi-clipboard lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_vH8IV3 ">
+</i>
+</button>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 140"   id="Svg_kZyhK-gk" data-vp="" class="lay_9Tg063 pos_e8wtf3 mapa_CrkEb2 vis_17D2N1 ">
+
+<g>
+	<g>
+		<polygon points="46,22 28,44 19,30"/>
+		<polygon points="46,22 33,33 28,44 22,44 22,95 31,95 20,100 12,117 0,117 0,22" shape-rendering="crispEdges"/>
+		<polygon points="31,95 12,117 4,106"/>
+	</g>
+	<g>
+		<polygon points="56,22 62,36 37,44"/>
+		<polygon points="56,22 111,22 111,44 37,44 56,32" shape-rendering="crispEdges"/>
+		<polygon points="116,95 97,117 90,104"/>
+		<polygon points="116,95 100,104 97,117 42,117 42,95" shape-rendering="crispEdges"/>
+		<polygon points="150,0 52,117 3,140 101,22"/>
+	</g>
+	<g>
+		<polygon points="141,22 140,40 122,45"/>
+		<polygon points="153,22 153,117 106,117 120,105 125,95 131,95 131,45 122,45 132,36 141,22" shape-rendering="crispEdges"/>
+		<polygon points="125,95 130,110 106,117"/>
+	</g>
+</g>
+
+</svg>
+</div>
+</div>
+<div  id="Flex_u9TNQ3-gk" data-vp="" style="overflow: auto;" class="lay_q9cYN3 pos_e8wtf3 mapa_D4ibq2 vis_PMQ7Z1 ">
+<div  id="Flex_l5td8-gk" data-vp="" class="lay_xVne41 pos_t0s233 mapa_CrkEb2 vis_PMQ7Z1 ">
+<div  id="Flex_euCMf3-gk" data-vp="" style="transform: translate3d(0px, 0px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_e5rBc4-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">1</p>
+<div  id="Flex_Olamr-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_YnXIX3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_Q2WVN-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Opaque = @import(</p>
+<p  id="Text_Icvq43-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_G7FES2 ">&quot;opaque-ui&quot;</p>
+<p  id="Text_FpuzX-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">);</p>
+</div>
+</div>
+<div  id="Flex_vD0T53-gk" data-vp="" style="transform: translate3d(0px, 22.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_ua9BG4-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">2</p>
+<div  id="Flex_A1OR91-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_gMFTC-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_s8SKF3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> ComboBoxDialog = Opaque.ComboBoxDialog;</p>
+</div>
+</div>
+<div  id="Flex_PWfo44-gk" data-vp="" style="transform: translate3d(0px, 45px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_nJjVt2-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">3</p>
+<div  id="Flex_UcqC81-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_CO4xX3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_zqxPV-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Item = Opaque.Item;</p>
+</div>
+</div>
+<div  id="Flex_uSNch1-gk" data-vp="" style="transform: translate3d(0px, 67.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_odc2y3-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">4</p>
+<div  id="Flex_zk2qI1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_4WfzD-gk" data-vp="" style="transform: translate3d(0px, 90px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_XKmRw-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">5</p>
+<div  id="Flex_thLCJ3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_eZ8PM1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_2VfXk1 ">// A dialog of items whose value is of type T.</p>
+</div>
+</div>
+<div  id="Flex_vl5CH3-gk" data-vp="" style="transform: translate3d(0px, 112.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_UB7T3-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">6</p>
+<div  id="Flex_l56Bv3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_K8ZwM1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">pub</p>
+<p  id="Text_x99hm2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_ImJnX2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_BzN1U4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_HdTKk2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">ComboBoxDialog</p>
+<p  id="Text_SkMtv2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_f5sj32-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">comptime</p>
+<p  id="Text_cPzAL2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> T: type) type</p>
+</div>
+</div>
+<div  id="Flex_eTKWL2-gk" data-vp="" style="transform: translate3d(0px, 135px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_OMVYi2-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">7</p>
+<div  id="Flex_33DFJ3-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_r5IKM3-gk" data-vp="" style="transform: translate3d(0px, 157.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_wsyqY1-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">8</p>
+<div  id="Flex_4ujsg-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_AruI21-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_2VfXk1 ">// A flat list, or titled groups.</p>
+</div>
+</div>
+<div  id="Flex_VQZ89-gk" data-vp="" style="transform: translate3d(0px, 180px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_8JFD44-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">9</p>
+<div  id="Flex_zfSzE2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_kHPV14-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">pub</p>
+<p  id="Text_n6rAG-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_rgvzA3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_IfRF32-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_l8Dka1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">fromItems</p>
+<p  id="Text_0WAkR1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(items: []</p>
+<p  id="Text_vtP172-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_4KY8k-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_XH7mc4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Item</p>
+<p  id="Text_LNWpg2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(T)) Self</p>
+</div>
+</div>
+<div  id="Flex_9OMHh1-gk" data-vp="" style="transform: translate3d(0px, 202.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_brIae-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">10</p>
+<div  id="Flex_zWgI12-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_hknR14-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">pub</p>
+<p  id="Text_sblft3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_t9yUi-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_OnJoD-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_F0szt3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">init</p>
+<p  id="Text_uIxX23-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(trigger: []</p>
+<p  id="Text_N8Q8M-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_8zl7c1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> u8, groups: []</p>
+<p  id="Text_44JuH4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">const</p>
+<p  id="Text_DHrJu2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> Group) Self</p>
+</div>
+</div>
+<div  id="Flex_1o9ya2-gk" data-vp="" style="transform: translate3d(0px, 225px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_vfCvi3-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">11</p>
+<div  id="Flex_eUi2N2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_zmtV11-gk" data-vp="" style="transform: translate3d(0px, 247.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_FGNu94-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">12</p>
+<div  id="Flex_0gAMn-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_kCY9Y2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_2VfXk1 ">// Draws the dialog while it&#39;s open, and nothing while it&#39;s closed.</p>
+</div>
+</div>
+<div  id="Flex_H2amk3-gk" data-vp="" style="transform: translate3d(0px, 270px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_CC8M44-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">13</p>
+<div  id="Flex_t78gy1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_Q5Wu-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">pub</p>
+<p  id="Text_XnLew2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_lVt2b-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_LskQV2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_BRrhA4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">render</p>
+<p  id="Text_PYGeq1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(dialog: *Self) void</p>
+</div>
+</div>
+<div  id="Flex_9bC024-gk" data-vp="" style="transform: translate3d(0px, 292.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_F2ZBS3-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">14</p>
+<div  id="Flex_bgWgb1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_zOgAW2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">pub</p>
+<p  id="Text_8B3cT1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_LKbzs2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_Jct5v2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_cv9Zj1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">open</p>
+<p  id="Text_IyXsj1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(dialog: *Self) void</p>
+</div>
+</div>
+<div  id="Flex_kenpD1-gk" data-vp="" style="transform: translate3d(0px, 315px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_4o4Gd2-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">15</p>
+<div  id="Flex_qnVP94-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_Khqvq-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">pub</p>
+<p  id="Text_LPBqz2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_EyP4e4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_CWXNq3 ">fn</p>
+<p  id="Text_3DYZ2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 "> </p>
+<p  id="Text_7HYCY-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_r2QxG2 ">close</p>
+<p  id="Text_0QxkY-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(dialog: *Self) void</p>
+</div>
+</div>
+<div  id="Flex_JktQ34-gk" data-vp="" style="transform: translate3d(0px, 337.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_rvZgd3-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">16</p>
+<div  id="Flex_ALV7M1-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+</div>
+</div>
+<div  id="Flex_PEM0O1-gk" data-vp="" style="transform: translate3d(0px, 360px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_CQYLR3-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">17</p>
+<div  id="Flex_aKTES4-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_EvaNL-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_2VfXk1 ">// Any button can open it.</p>
+</div>
+</div>
+<div  id="Flex_8j9nr2-gk" data-vp="" style="transform: translate3d(0px, 382.5px, 0px);" class="lay_5T1361 pos_EzcyX4 mapa_CrkEb2 vis_hyiu14 ">
+<p  id="Text_9ujf42-gk" data-vp="" style="flex-shrink: 0; user-select: none;" class="lay_yMYoc2 pos_e8wtf3 mapa_CrkEb2 vis_Srq792 ">18</p>
+<div  id="Flex_RGfGm2-gk" data-vp="" class="lay_4PUDp2 pos_e8wtf3 mapa_t79Oh3 vis_KEn011 ">
+<p  id="Text_p9jLs1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">Button</p>
+<p  id="Text_kyWw33-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(</p>
+<p  id="Text_6xRpI4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_9RVfx2 ">ComboBoxDialog</p>
+<p  id="Text_wx3yI-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_02aNZ1 ">(T).open, .{&amp;dialog})</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p  id="Text_ReSeD-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Item</p>
+<p  id="Text_9h2UX3-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Opaque.Item(T): one entry, also used by other opaque-ui lists.</p>
+<div  id="Flex_bnmPk-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_rPfvm1 vis_UwCOT2 ">
+<div  id="Flex_cQFdN1-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_cLPMR vis_HkXHJ2 ">
+<div  id="Flex_5RpUJ4-gk" data-vp="" class="resp_fsdBN2 lay_AEgkh1 pos_e8wtf3 mapa_jigL04 vis_PMQ7Z1 ">
+<div  id="Flex_0SGMl2-gk" data-vp="" class="lay_u32Lx1 pos_e8wtf3 mapa_rPfvm1 vis_XslkZ1 ">
+<p  id="Text_P9Th82-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_m5hh3 ">Item(T)</p>
+</div>
+</div>
+<div  id="Flex_zpaqA3-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_CrkEb2 vis_4dMax2 ">
+<div  id="Flex_i9UMr1-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_R7O8L3-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_bLEdA1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">value</p>
+<p  id="Text_mnsNu2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_HUvmK3 ">T</p>
+</div>
+<p  id="Text_QREeF4-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">What the item stands for.</p>
+</div>
+<div  id="Flex_2gyPr-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_DNWnc2-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_FtZCV1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">label</p>
+<p  id="Text_Ltkgr2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_HUvmK3 ">[]const u8</p>
+</div>
+<p  id="Text_ZgGqP2-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">Its text, and what the search matches, ignoring case.</p>
+</div>
+<div  id="Flex_kluUz-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_61ezD3-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_kuNa32-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">icon</p>
+<p  id="Text_1MGPx-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_HUvmK3 ">?IconTokens</p>
+<p  id="Text_n8lwE-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_iYcVu3 ">= null</p>
+</div>
+<p  id="Text_jaqVa1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">For your row_component to draw.</p>
+</div>
+<div  id="Flex_C27SU4-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_82H4Y4-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_TS9db3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">description</p>
+<p  id="Text_yodjM1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_HUvmK3 ">?[]const u8</p>
+<p  id="Text_FmrUC3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_iYcVu3 ">= null</p>
+</div>
+<p  id="Text_6ahhR1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">For your row_component to draw.</p>
+</div>
+<div  id="Flex_Q8fTK3-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_Dg3ak3-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_F81Wm2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">link</p>
+<p  id="Text_PhaaD1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_HUvmK3 ">?[]const u8</p>
+<p  id="Text_VhiYE4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_iYcVu3 ">= null</p>
+</div>
+<p  id="Text_dZTGY2-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">For your row_component or on_select to use.</p>
+</div>
+<div  id="Flex_DL1gt2-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_ztqUk1 ">
+<div  id="Flex_x3WbV-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_Ggow01-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">is_selected</p>
+<p  id="Text_Yw34A3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_HUvmK3 ">bool</p>
+<p  id="Text_7azOc4-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_iYcVu3 ">= false</p>
+</div>
+<p  id="Text_yyWMg-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">Whether it&#39;s picked. Picking it again unpicks it.</p>
+</div>
+</div>
+</div>
+</div>
+<p  id="Text_mxpm1-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Fields</p>
+<p  id="Text_e4lDf-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">Set them after init.</p>
+<div  id="Flex_O7zy31-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_rPfvm1 vis_UwCOT2 ">
+<div  id="Flex_Sqtt2-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_cLPMR vis_HkXHJ2 ">
+<div  id="Flex_A1tpg1-gk" data-vp="" class="resp_fsdBN2 lay_AEgkh1 pos_e8wtf3 mapa_jigL04 vis_PMQ7Z1 ">
+<div  id="Flex_Tx4Sx-gk" data-vp="" class="lay_u32Lx1 pos_e8wtf3 mapa_rPfvm1 vis_XslkZ1 ">
+<p  id="Text_g0Gpb1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_m5hh3 ">ComboBoxDialog(T)</p>
+</div>
+</div>
+<div  id="Flex_QrgJM2-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_CrkEb2 vis_4dMax2 ">
+<div  id="Flex_tXLtx-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_X6WVI1-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_biOsV3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">on_select</p>
+<p  id="Text_tTRPk2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_HUvmK3 ">?*const fn (item: *Item(T)) void</p>
+<p  id="Text_Z9aJa-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_iYcVu3 ">= null</p>
+</div>
+<p  id="Text_wZoCD-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">Called with the item picked or unpicked.</p>
+</div>
+<div  id="Flex_ZnLZG1-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_BRJdV-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_AwBy03-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">on_close</p>
+<p  id="Text_fnvQN-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_HUvmK3 ">?*const fn () void</p>
+<p  id="Text_HJbdH2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_iYcVu3 ">= null</p>
+</div>
+<p  id="Text_9sEx23-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">Called when the dialog closes.</p>
+</div>
+<div  id="Flex_SgrwT3-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_ztqUk1 ">
+<div  id="Flex_ch0lb4-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_1AuhC3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">row_component</p>
+<p  id="Text_nFSwE2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_HUvmK3 ">?*const fn (*Self, *Item(T)) void</p>
+<p  id="Text_01l4V3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_iYcVu3 ">= null</p>
+</div>
+<p  id="Text_UWkhc-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">Draws each row yourself; the dialog keeps the highlight, clicks and keys.</p>
+</div>
+</div>
+</div>
+</div>
+<p  id="Text_orF0G4-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_9SPU2 vis_T9885 ">Behaviour</p>
+<p  id="Text_JLCY71-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_0Ngye4 vis_RpDVK4 ">What the dialog does for you.</p>
+<div  id="Flex_2TtG-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_rPfvm1 vis_UwCOT2 ">
+<div  id="Flex_PUmLc-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_cLPMR vis_HkXHJ2 ">
+<div  id="Flex_AUlOc-gk" data-vp="" class="resp_fsdBN2 lay_AEgkh1 pos_e8wtf3 mapa_jigL04 vis_PMQ7Z1 ">
+<div  id="Flex_S0lpS2-gk" data-vp="" class="lay_u32Lx1 pos_e8wtf3 mapa_rPfvm1 vis_XslkZ1 ">
+<p  id="Text_18M134-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_m5hh3 ">Behaviour</p>
+</div>
+</div>
+<div  id="Flex_019Ko3-gk" data-vp="" class="lay_HKTla3 pos_e8wtf3 mapa_CrkEb2 vis_4dMax2 ">
+<div  id="Flex_TzgIp-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_JZAVU3-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_6OWHM2-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">Searching</p>
+</div>
+<p  id="Text_EHzhX4-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">The search box has focus when it opens; typing shows only the items whose label contains it.</p>
+</div>
+<div  id="Flex_GnhWy2-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_jmPVh1-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_hXvnm3-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">Keyboard</p>
+</div>
+<p  id="Text_hH9IM4-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">Up and Down move the highlight, Enter picks the highlighted item, Tab picks it and closes, Escape closes.</p>
+</div>
+<div  id="Flex_HdbBo1-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_wfOXv3 ">
+<div  id="Flex_uV0Os3-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_CtX5M1-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">Closing</p>
+</div>
+<p  id="Text_jUlcT2-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">Escape, Tab, or a click outside.</p>
+</div>
+<div  id="Flex_nnqlp-gk" data-vp="" class="lay_l8dZH4 pos_e8wtf3 mapa_XMDC84 vis_ztqUk1 ">
+<div  id="Flex_X4HfO3-gk" data-vp="" class="lay_Guzrz2 pos_e8wtf3 mapa_CrkEb2 vis_PMQ7Z1 ">
+<p  id="Text_yLSjV-gk" data-vp="" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_d0zSM3 ">Screen readers</p>
+</div>
+<p  id="Text_y2PgF3-gk" data-vp="" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_K7tpn2 ">The box has role=dialog; the search is a combobox that points at the highlighted option, and the count of results is announced.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
