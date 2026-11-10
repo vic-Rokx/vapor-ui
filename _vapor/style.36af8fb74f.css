@@ -2904,6 +2904,16 @@ height:fit-content;
 flex-shrink: 0;
 flex-wrap:wrap;
 }
+.lay_nCHVo2{
+display:flex;
+flex-direction:row;
+justify-content:flex-start;
+align-items:center;
+width:72.00px;
+flex-shrink: 0;
+height:42.00px;
+flex-shrink: 0;
+}
 .lay_3eQTE4{
 display:flex;
 flex-direction:row;
